@@ -1,0 +1,4 @@
+source;share/crater_application/local_setup.bash
+source;share/crater_application/local_setup.dsv
+source;share/crater_application/local_setup.sh
+source;share/crater_application/local_setup.zsh

@@ -1,0 +1,808 @@
+[0.117s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.117s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7faadeb555d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7faadeb54f10>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7faadeb54f10>>, mixin_verb=('build',))
+[0.256s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.257s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.258s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/media/sf_CRATER/Simulation02.04'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls) by extension 'ignore'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls) by extension 'ignore_ament_install'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls) by extensions ['colcon_pkg']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls) by extension 'colcon_pkg'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls) by extensions ['colcon_meta']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls) by extension 'colcon_meta'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls) by extensions ['ros']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls) by extension 'ros'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls) by extensions ['cmake', 'python']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls) by extension 'cmake'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls) by extension 'python'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls) by extensions ['python_setup_py']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls) by extension 'python_setup_py'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/build) by extensions ['ignore', 'ignore_ament_install']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/build) by extension 'ignore'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/build) ignored
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/install) by extensions ['ignore', 'ignore_ament_install']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/install) by extension 'ignore'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/install) ignored
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation) by extension 'ignore'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation) by extension 'ignore_ament_install'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation) by extensions ['colcon_pkg']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation) by extension 'colcon_pkg'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation) by extensions ['colcon_meta']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation) by extension 'colcon_meta'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation) by extensions ['ros']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation) by extension 'ros'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation) by extensions ['cmake', 'python']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation) by extension 'cmake'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation) by extension 'python'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation) by extensions ['python_setup_py']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation) by extension 'python_setup_py'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out) by extensions ['ignore', 'ignore_ament_install']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out) by extension 'ignore'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out) by extension 'ignore_ament_install'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out) by extensions ['colcon_pkg']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out) by extension 'colcon_pkg'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out) by extensions ['colcon_meta']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out) by extension 'colcon_meta'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out) by extensions ['ros']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out) by extension 'ros'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out) by extensions ['cmake', 'python']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out) by extension 'cmake'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out) by extension 'python'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out) by extensions ['python_setup_py']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out) by extension 'python_setup_py'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes) by extensions ['ignore', 'ignore_ament_install']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes) by extension 'ignore'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes) by extension 'ignore_ament_install'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes) by extensions ['colcon_pkg']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes) by extension 'colcon_pkg'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes) by extensions ['colcon_meta']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes) by extension 'colcon_meta'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes) by extensions ['ros']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes) by extension 'ros'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes) by extensions ['cmake', 'python']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes) by extension 'cmake'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes) by extension 'python'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes) by extensions ['python_setup_py']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes) by extension 'python_setup_py'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes/out) by extensions ['ignore', 'ignore_ament_install']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes/out) by extension 'ignore'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes/out) by extension 'ignore_ament_install'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes/out) by extensions ['colcon_pkg']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes/out) by extension 'colcon_pkg'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes/out) by extensions ['colcon_meta']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes/out) by extension 'colcon_meta'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes/out) by extensions ['ros']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes/out) by extension 'ros'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes/out) by extensions ['cmake', 'python']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes/out) by extension 'cmake'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes/out) by extension 'python'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes/out) by extensions ['python_setup_py']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/landmark_model_texture_generation/out/meshes/out) by extension 'python_setup_py'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/log) by extensions ['ignore', 'ignore_ament_install']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/log) by extension 'ignore'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/log) ignored
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation) by extension 'ignore'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation) by extension 'ignore_ament_install'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation) by extensions ['colcon_pkg']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation) by extension 'colcon_pkg'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation) by extensions ['colcon_meta']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation) by extension 'colcon_meta'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation) by extensions ['ros']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation) by extension 'ros'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation) by extensions ['cmake', 'python']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation) by extension 'cmake'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation) by extension 'python'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation) by extensions ['python_setup_py']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation) by extension 'python_setup_py'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src) by extensions ['ignore', 'ignore_ament_install']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src) by extension 'ignore'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src) by extension 'ignore_ament_install'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src) by extensions ['colcon_pkg']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src) by extension 'colcon_pkg'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src) by extensions ['colcon_meta']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src) by extension 'colcon_meta'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src) by extensions ['ros']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src) by extension 'ros'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src) by extensions ['cmake', 'python']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src) by extension 'cmake'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src) by extension 'python'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src) by extensions ['python_setup_py']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src) by extension 'python_setup_py'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo) by extension 'ignore'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo) by extension 'ignore_ament_install'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo) by extensions ['colcon_pkg']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo) by extension 'colcon_pkg'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo) by extensions ['colcon_meta']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo) by extension 'colcon_meta'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo) by extensions ['ros']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo) by extension 'ros'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo) by extensions ['cmake', 'python']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo) by extension 'cmake'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo) by extension 'python'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo) by extensions ['python_setup_py']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo) by extension 'python_setup_py'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator) by extensions ['ignore', 'ignore_ament_install']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator) by extension 'ignore'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator) by extension 'ignore_ament_install'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator) by extensions ['colcon_pkg']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator) by extension 'colcon_pkg'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator) by extensions ['colcon_meta']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator) by extension 'colcon_meta'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator) by extensions ['ros']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator) by extension 'ros'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator) by extensions ['cmake', 'python']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator) by extension 'cmake'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator) by extension 'python'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator) by extensions ['python_setup_py']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator) by extension 'python_setup_py'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator/worlds) by extensions ['ignore', 'ignore_ament_install']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator/worlds) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator/worlds) by extension 'ignore_ament_install'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator/worlds) by extensions ['colcon_pkg']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator/worlds) by extension 'colcon_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator/worlds) by extensions ['colcon_meta']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator/worlds) by extension 'colcon_meta'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator/worlds) by extensions ['ros']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator/worlds) by extension 'ros'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator/worlds) by extensions ['cmake', 'python']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator/worlds) by extension 'cmake'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator/worlds) by extension 'python'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator/worlds) by extensions ['python_setup_py']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/simulation/src/crater_gazebo/crater_simulator/worlds) by extension 'python_setup_py'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src) by extension 'ignore'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src) by extension 'ignore_ament_install'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src) by extensions ['colcon_pkg']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src) by extension 'colcon_pkg'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src) by extensions ['colcon_meta']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src) by extension 'colcon_meta'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src) by extensions ['ros']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src) by extension 'ros'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src) by extensions ['cmake', 'python']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src) by extension 'cmake'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src) by extension 'python'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src) by extensions ['python_setup_py']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src) by extension 'python_setup_py'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_aruco) by extensions ['ignore', 'ignore_ament_install']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_aruco) by extension 'ignore'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_aruco) by extension 'ignore_ament_install'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_aruco) by extensions ['colcon_pkg']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_aruco) by extension 'colcon_pkg'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_aruco) by extensions ['colcon_meta']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_aruco) by extension 'colcon_meta'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_aruco) by extensions ['ros']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_aruco) by extension 'ros'
+[0.362s] DEBUG:colcon.colcon_core.package_identification:Package 'autonomous-controls/src/crater_aruco' with type 'ros.ament_python' and name 'crater_aruco'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo) by extension 'ignore'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo) by extension 'ignore_ament_install'
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo) by extensions ['colcon_pkg']
+[0.364s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo) by extension 'colcon_pkg'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo) by extensions ['colcon_meta']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo) by extension 'colcon_meta'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo) by extensions ['ros']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo) by extension 'ros'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo) by extensions ['cmake', 'python']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo) by extension 'cmake'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo) by extension 'python'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo) by extensions ['python_setup_py']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo) by extension 'python_setup_py'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_application) by extensions ['ignore', 'ignore_ament_install']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_application) by extension 'ignore'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_application) by extension 'ignore_ament_install'
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_application) by extensions ['colcon_pkg']
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_application) by extension 'colcon_pkg'
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_application) by extensions ['colcon_meta']
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_application) by extension 'colcon_meta'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_application) by extensions ['ros']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_application) by extension 'ros'
+[0.377s] DEBUG:colcon.colcon_core.package_identification:Package 'autonomous-controls/src/crater_gazebo/crater_application' with type 'ros.ament_cmake' and name 'crater_application'
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_bringup) by extension 'ignore'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_bringup) by extension 'ignore_ament_install'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_bringup) by extensions ['colcon_pkg']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_bringup) by extension 'colcon_pkg'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_bringup) by extensions ['colcon_meta']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_bringup) by extension 'colcon_meta'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_bringup) by extensions ['ros']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_bringup) by extension 'ros'
+[0.384s] DEBUG:colcon.colcon_core.package_identification:Package 'autonomous-controls/src/crater_gazebo/crater_bringup' with type 'ros.ament_cmake' and name 'crater_bringup'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_description) by extensions ['ignore', 'ignore_ament_install']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_description) by extension 'ignore'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_description) by extension 'ignore_ament_install'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_description) by extensions ['colcon_pkg']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_description) by extension 'colcon_pkg'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_description) by extensions ['colcon_meta']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_description) by extension 'colcon_meta'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_description) by extensions ['ros']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_description) by extension 'ros'
+[0.391s] DEBUG:colcon.colcon_core.package_identification:Package 'autonomous-controls/src/crater_gazebo/crater_description' with type 'ros.ament_cmake' and name 'crater_description'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_global_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_global_planner) by extension 'ignore'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_global_planner) by extension 'ignore_ament_install'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_global_planner) by extensions ['colcon_pkg']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_global_planner) by extension 'colcon_pkg'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_global_planner) by extensions ['colcon_meta']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_global_planner) by extension 'colcon_meta'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_global_planner) by extensions ['ros']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_global_planner) by extension 'ros'
+[0.398s] DEBUG:colcon.colcon_core.package_identification:Package 'autonomous-controls/src/crater_gazebo/crater_global_planner' with type 'ros.ament_cmake' and name 'crater_global_planner'
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_simulator) by extensions ['ignore', 'ignore_ament_install']
+[0.400s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_simulator) by extension 'ignore'
+[0.401s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_simulator) by extension 'ignore_ament_install'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_simulator) by extensions ['colcon_pkg']
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_simulator) by extension 'colcon_pkg'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_simulator) by extensions ['colcon_meta']
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_simulator) by extension 'colcon_meta'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_simulator) by extensions ['ros']
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/crater_gazebo/crater_simulator) by extension 'ros'
+[0.406s] DEBUG:colcon.colcon_core.package_identification:Package 'autonomous-controls/src/crater_gazebo/crater_simulator' with type 'ros.ament_cmake' and name 'crater_simulator'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/global_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/global_planner) by extension 'ignore'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/global_planner) by extension 'ignore_ament_install'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/global_planner) by extensions ['colcon_pkg']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/global_planner) by extension 'colcon_pkg'
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/global_planner) by extensions ['colcon_meta']
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/global_planner) by extension 'colcon_meta'
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/global_planner) by extensions ['ros']
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/global_planner) by extension 'ros'
+[0.413s] DEBUG:colcon.colcon_core.package_identification:Package 'autonomous-controls/src/global_planner' with type 'ros.ament_cmake' and name 'global-planner'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/local_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/local_planner) by extension 'ignore'
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/local_planner) by extension 'ignore_ament_install'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/local_planner) by extensions ['colcon_pkg']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/local_planner) by extension 'colcon_pkg'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/local_planner) by extensions ['colcon_meta']
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/local_planner) by extension 'colcon_meta'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/local_planner) by extensions ['ros']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/local_planner) by extension 'ros'
+[0.420s] DEBUG:colcon.colcon_core.package_identification:Package 'autonomous-controls/src/local_planner' with type 'ros.ament_cmake' and name 'crater_local_planner'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/state_estimation) by extensions ['ignore', 'ignore_ament_install']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/state_estimation) by extension 'ignore'
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/state_estimation) by extension 'ignore_ament_install'
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/state_estimation) by extensions ['colcon_pkg']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/state_estimation) by extension 'colcon_pkg'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/state_estimation) by extensions ['colcon_meta']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/state_estimation) by extension 'colcon_meta'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/state_estimation) by extensions ['ros']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/src/state_estimation) by extension 'ros'
+[0.427s] DEBUG:colcon.colcon_core.package_identification:Package 'autonomous-controls/src/state_estimation' with type 'ros.ament_cmake' and name 'state_estimation'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/tools) by extensions ['ignore', 'ignore_ament_install']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/tools) by extension 'ignore'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/tools) by extension 'ignore_ament_install'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/tools) by extensions ['colcon_pkg']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/tools) by extension 'colcon_pkg'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/tools) by extensions ['colcon_meta']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/tools) by extension 'colcon_meta'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/tools) by extensions ['ros']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/tools) by extension 'ros'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/tools) by extensions ['cmake', 'python']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/tools) by extension 'cmake'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/tools) by extension 'python'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/tools) by extensions ['python_setup_py']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(autonomous-controls/tools) by extension 'python_setup_py'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.438s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.439s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.439s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.439s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.439s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.473s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.474s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.508s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 9 installed packages in /media/sf_CRATER/Simulation02.04/install
+[0.511s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 286 installed packages in /opt/ros/humble
+[0.513s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'crater_application' build argument 'cmake_args' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'crater_application' build argument 'cmake_target' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'crater_application' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'crater_application' build argument 'cmake_clean_cache' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'crater_application' build argument 'cmake_clean_first' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'crater_application' build argument 'cmake_force_configure' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'crater_application' build argument 'ament_cmake_args' from command line to 'None'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'crater_application' build argument 'catkin_cmake_args' from command line to 'None'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'crater_application' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.562s] DEBUG:colcon.colcon_core.verb:Building package 'crater_application' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/sf_CRATER/Simulation02.04/build/crater_application', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/sf_CRATER/Simulation02.04/install/crater_application', 'merge_install': False, 'path': '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_gazebo/crater_application', 'symlink_install': False, 'test_result_base': None}
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'crater_aruco' build argument 'cmake_args' from command line to 'None'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'crater_aruco' build argument 'cmake_target' from command line to 'None'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'crater_aruco' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'crater_aruco' build argument 'cmake_clean_cache' from command line to 'False'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'crater_aruco' build argument 'cmake_clean_first' from command line to 'False'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'crater_aruco' build argument 'cmake_force_configure' from command line to 'False'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'crater_aruco' build argument 'ament_cmake_args' from command line to 'None'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'crater_aruco' build argument 'catkin_cmake_args' from command line to 'None'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'crater_aruco' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.564s] DEBUG:colcon.colcon_core.verb:Building package 'crater_aruco' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/sf_CRATER/Simulation02.04/build/crater_aruco', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/sf_CRATER/Simulation02.04/install/crater_aruco', 'merge_install': False, 'path': '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_aruco', 'symlink_install': False, 'test_result_base': None}
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'crater_description' build argument 'cmake_args' from command line to 'None'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'crater_description' build argument 'cmake_target' from command line to 'None'
+[0.565s] Level 5:colcon.colcon_core.verb:set package 'crater_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'crater_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'crater_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'crater_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'crater_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'crater_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'crater_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.567s] DEBUG:colcon.colcon_core.verb:Building package 'crater_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/sf_CRATER/Simulation02.04/build/crater_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/sf_CRATER/Simulation02.04/install/crater_description', 'merge_install': False, 'path': '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_gazebo/crater_description', 'symlink_install': False, 'test_result_base': None}
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'crater_global_planner' build argument 'cmake_args' from command line to 'None'
+[0.568s] Level 5:colcon.colcon_core.verb:set package 'crater_global_planner' build argument 'cmake_target' from command line to 'None'
+[0.568s] Level 5:colcon.colcon_core.verb:set package 'crater_global_planner' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.568s] Level 5:colcon.colcon_core.verb:set package 'crater_global_planner' build argument 'cmake_clean_cache' from command line to 'False'
+[0.568s] Level 5:colcon.colcon_core.verb:set package 'crater_global_planner' build argument 'cmake_clean_first' from command line to 'False'
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'crater_global_planner' build argument 'cmake_force_configure' from command line to 'False'
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'crater_global_planner' build argument 'ament_cmake_args' from command line to 'None'
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'crater_global_planner' build argument 'catkin_cmake_args' from command line to 'None'
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'crater_global_planner' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.569s] DEBUG:colcon.colcon_core.verb:Building package 'crater_global_planner' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/sf_CRATER/Simulation02.04/build/crater_global_planner', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/sf_CRATER/Simulation02.04/install/crater_global_planner', 'merge_install': False, 'path': '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_gazebo/crater_global_planner', 'symlink_install': False, 'test_result_base': None}
+[0.570s] Level 5:colcon.colcon_core.verb:set package 'crater_local_planner' build argument 'cmake_args' from command line to 'None'
+[0.570s] Level 5:colcon.colcon_core.verb:set package 'crater_local_planner' build argument 'cmake_target' from command line to 'None'
+[0.570s] Level 5:colcon.colcon_core.verb:set package 'crater_local_planner' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.571s] Level 5:colcon.colcon_core.verb:set package 'crater_local_planner' build argument 'cmake_clean_cache' from command line to 'False'
+[0.571s] Level 5:colcon.colcon_core.verb:set package 'crater_local_planner' build argument 'cmake_clean_first' from command line to 'False'
+[0.571s] Level 5:colcon.colcon_core.verb:set package 'crater_local_planner' build argument 'cmake_force_configure' from command line to 'False'
+[0.571s] Level 5:colcon.colcon_core.verb:set package 'crater_local_planner' build argument 'ament_cmake_args' from command line to 'None'
+[0.571s] Level 5:colcon.colcon_core.verb:set package 'crater_local_planner' build argument 'catkin_cmake_args' from command line to 'None'
+[0.571s] Level 5:colcon.colcon_core.verb:set package 'crater_local_planner' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.571s] DEBUG:colcon.colcon_core.verb:Building package 'crater_local_planner' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/sf_CRATER/Simulation02.04/build/crater_local_planner', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/sf_CRATER/Simulation02.04/install/crater_local_planner', 'merge_install': False, 'path': '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/local_planner', 'symlink_install': False, 'test_result_base': None}
+[0.572s] Level 5:colcon.colcon_core.verb:set package 'global-planner' build argument 'cmake_args' from command line to 'None'
+[0.572s] Level 5:colcon.colcon_core.verb:set package 'global-planner' build argument 'cmake_target' from command line to 'None'
+[0.572s] Level 5:colcon.colcon_core.verb:set package 'global-planner' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.572s] Level 5:colcon.colcon_core.verb:set package 'global-planner' build argument 'cmake_clean_cache' from command line to 'False'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'global-planner' build argument 'cmake_clean_first' from command line to 'False'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'global-planner' build argument 'cmake_force_configure' from command line to 'False'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'global-planner' build argument 'ament_cmake_args' from command line to 'None'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'global-planner' build argument 'catkin_cmake_args' from command line to 'None'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'global-planner' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.574s] DEBUG:colcon.colcon_core.verb:Building package 'global-planner' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/sf_CRATER/Simulation02.04/build/global-planner', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/sf_CRATER/Simulation02.04/install/global-planner', 'merge_install': False, 'path': '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/global_planner', 'symlink_install': False, 'test_result_base': None}
+[0.574s] Level 5:colcon.colcon_core.verb:set package 'state_estimation' build argument 'cmake_args' from command line to 'None'
+[0.574s] Level 5:colcon.colcon_core.verb:set package 'state_estimation' build argument 'cmake_target' from command line to 'None'
+[0.574s] Level 5:colcon.colcon_core.verb:set package 'state_estimation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.575s] Level 5:colcon.colcon_core.verb:set package 'state_estimation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.575s] Level 5:colcon.colcon_core.verb:set package 'state_estimation' build argument 'cmake_clean_first' from command line to 'False'
+[0.575s] Level 5:colcon.colcon_core.verb:set package 'state_estimation' build argument 'cmake_force_configure' from command line to 'False'
+[0.575s] Level 5:colcon.colcon_core.verb:set package 'state_estimation' build argument 'ament_cmake_args' from command line to 'None'
+[0.576s] Level 5:colcon.colcon_core.verb:set package 'state_estimation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.576s] Level 5:colcon.colcon_core.verb:set package 'state_estimation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.576s] DEBUG:colcon.colcon_core.verb:Building package 'state_estimation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/sf_CRATER/Simulation02.04/build/state_estimation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/sf_CRATER/Simulation02.04/install/state_estimation', 'merge_install': False, 'path': '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/state_estimation', 'symlink_install': False, 'test_result_base': None}
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'crater_simulator' build argument 'cmake_args' from command line to 'None'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'crater_simulator' build argument 'cmake_target' from command line to 'None'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'crater_simulator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'crater_simulator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.579s] Level 5:colcon.colcon_core.verb:set package 'crater_simulator' build argument 'cmake_clean_first' from command line to 'False'
+[0.579s] Level 5:colcon.colcon_core.verb:set package 'crater_simulator' build argument 'cmake_force_configure' from command line to 'False'
+[0.579s] Level 5:colcon.colcon_core.verb:set package 'crater_simulator' build argument 'ament_cmake_args' from command line to 'None'
+[0.580s] Level 5:colcon.colcon_core.verb:set package 'crater_simulator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.580s] Level 5:colcon.colcon_core.verb:set package 'crater_simulator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.580s] DEBUG:colcon.colcon_core.verb:Building package 'crater_simulator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/sf_CRATER/Simulation02.04/build/crater_simulator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/sf_CRATER/Simulation02.04/install/crater_simulator', 'merge_install': False, 'path': '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_gazebo/crater_simulator', 'symlink_install': False, 'test_result_base': None}
+[0.580s] Level 5:colcon.colcon_core.verb:set package 'crater_bringup' build argument 'cmake_args' from command line to 'None'
+[0.581s] Level 5:colcon.colcon_core.verb:set package 'crater_bringup' build argument 'cmake_target' from command line to 'None'
+[0.581s] Level 5:colcon.colcon_core.verb:set package 'crater_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.581s] Level 5:colcon.colcon_core.verb:set package 'crater_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.581s] Level 5:colcon.colcon_core.verb:set package 'crater_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.582s] Level 5:colcon.colcon_core.verb:set package 'crater_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.582s] Level 5:colcon.colcon_core.verb:set package 'crater_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.582s] Level 5:colcon.colcon_core.verb:set package 'crater_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.582s] Level 5:colcon.colcon_core.verb:set package 'crater_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.582s] DEBUG:colcon.colcon_core.verb:Building package 'crater_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/sf_CRATER/Simulation02.04/build/crater_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/sf_CRATER/Simulation02.04/install/crater_bringup', 'merge_install': False, 'path': '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_gazebo/crater_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.583s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.585s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.585s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_gazebo/crater_description' with build type 'ament_cmake'
+[0.585s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_gazebo/crater_description'
+[0.588s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.589s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.589s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.617s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_gazebo/crater_application' with build type 'ament_cmake'
+[0.617s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_gazebo/crater_application'
+[0.617s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.617s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.634s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_gazebo/crater_global_planner' with build type 'ament_cmake'
+[0.634s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_gazebo/crater_global_planner'
+[0.636s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.636s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.710s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_aruco' with build type 'ament_python'
+[0.711s] Level 1:colcon.colcon_core.shell:create_environment_hook('crater_aruco', 'ament_prefix_path')
+[0.711s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_aruco/share/crater_aruco/hook/ament_prefix_path.ps1'
+[0.720s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/sf_CRATER/Simulation02.04/install/crater_aruco/share/crater_aruco/hook/ament_prefix_path.dsv'
+[0.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_aruco/share/crater_aruco/hook/ament_prefix_path.sh'
+[0.726s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.727s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.760s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/local_planner' with build type 'ament_cmake'
+[0.761s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/local_planner'
+[0.761s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.761s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.787s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/global_planner' with build type 'ament_cmake'
+[0.788s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/global_planner'
+[0.788s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.789s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.812s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/state_estimation' with build type 'ament_cmake'
+[0.814s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/state_estimation'
+[0.815s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.815s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.884s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/crater_description -- -j16 -l16
+[0.938s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_application': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/crater_application -- -j16 -l16
+[0.983s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_global_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/crater_global_planner -- -j16 -l16
+[1.251s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_aruco'
+[1.253s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.253s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.325s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_local_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/crater_local_planner -- -j16 -l16
+[1.406s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/sf_CRATER/Simulation02.04/build/global-planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/global-planner -- -j16 -l16
+[1.409s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_global_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/crater_global_planner -- -j16 -l16
+[1.446s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_global_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/crater_global_planner
+[1.449s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/crater_description -- -j16 -l16
+[1.503s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/crater_description
+[1.578s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/sf_CRATER/Simulation02.04/build/state_estimation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/state_estimation -- -j16 -l16
+[1.590s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_application' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/crater_application -- -j16 -l16
+[1.765s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(crater_global_planner)
+[1.773s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_global_planner' for CMake module files
+[1.793s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_application': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/crater_application
+[1.843s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_local_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/crater_local_planner -- -j16 -l16
+[1.865s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_global_planner' for CMake config files
+[1.866s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_local_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/crater_local_planner
+[1.868s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/sf_CRATER/Simulation02.04/build/global-planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/global-planner -- -j16 -l16
+[1.880s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/sf_CRATER/Simulation02.04/build/global-planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/global-planner
+[1.881s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_global_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/crater_global_planner
+[1.888s] Level 1:colcon.colcon_core.shell:create_environment_hook('crater_global_planner', 'cmake_prefix_path')
+[1.889s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/share/crater_global_planner/hook/cmake_prefix_path.ps1'
+[1.892s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/share/crater_global_planner/hook/cmake_prefix_path.dsv'
+[1.894s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/share/crater_global_planner/hook/cmake_prefix_path.sh'
+[1.899s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/lib'
+[1.900s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/bin'
+[1.901s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/lib/pkgconfig/crater_global_planner.pc'
+[1.902s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/lib/python3.10/site-packages'
+[1.903s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/bin'
+[1.904s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/share/crater_global_planner/package.ps1'
+[1.907s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/share/crater_global_planner/package.dsv'
+[1.913s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/share/crater_global_planner/package.sh'
+[1.918s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/share/crater_global_planner/package.bash'
+[1.920s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/share/crater_global_planner/package.zsh'
+[1.923s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/sf_CRATER/Simulation02.04/install/crater_global_planner/share/colcon-core/packages/crater_global_planner)
+[1.929s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(crater_global_planner)
+[1.930s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_global_planner' for CMake module files
+[1.937s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_global_planner' for CMake config files
+[1.945s] Level 1:colcon.colcon_core.shell:create_environment_hook('crater_global_planner', 'cmake_prefix_path')
+[1.945s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/share/crater_global_planner/hook/cmake_prefix_path.ps1'
+[1.947s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/share/crater_global_planner/hook/cmake_prefix_path.dsv'
+[1.948s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/share/crater_global_planner/hook/cmake_prefix_path.sh'
+[1.950s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/lib'
+[1.951s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/bin'
+[1.952s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/lib/pkgconfig/crater_global_planner.pc'
+[1.952s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/lib/python3.10/site-packages'
+[1.953s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/bin'
+[1.954s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/share/crater_global_planner/package.ps1'
+[1.956s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/share/crater_global_planner/package.dsv'
+[1.958s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/share/crater_global_planner/package.sh'
+[1.959s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/share/crater_global_planner/package.bash'
+[1.962s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_global_planner/share/crater_global_planner/package.zsh'
+[1.966s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/sf_CRATER/Simulation02.04/install/crater_global_planner/share/colcon-core/packages/crater_global_planner)
+[1.969s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(crater_description)
+[1.969s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_description' for CMake module files
+[1.980s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/crater_description
+[1.994s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_description' for CMake config files
+[2.006s] Level 1:colcon.colcon_core.shell:create_environment_hook('crater_description', 'cmake_prefix_path')
+[2.007s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/hook/cmake_prefix_path.ps1'
+[2.009s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/hook/cmake_prefix_path.dsv'
+[2.011s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/hook/cmake_prefix_path.sh'
+[2.013s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_description/bin'
+[2.014s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_description/lib/pkgconfig/crater_description.pc'
+[2.015s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_description/lib/python3.10/site-packages'
+[2.015s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_description/bin'
+[2.016s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/package.ps1'
+[2.017s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/package.dsv'
+[2.019s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/package.sh'
+[2.021s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/package.bash'
+[2.023s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/package.zsh'
+[2.025s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/sf_CRATER/Simulation02.04/install/crater_description/share/colcon-core/packages/crater_description)
+[2.034s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(crater_description)
+[2.034s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_description' for CMake module files
+[2.039s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_description' for CMake config files
+[2.044s] Level 1:colcon.colcon_core.shell:create_environment_hook('crater_description', 'cmake_prefix_path')
+[2.045s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/hook/cmake_prefix_path.ps1'
+[2.047s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/hook/cmake_prefix_path.dsv'
+[2.049s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/hook/cmake_prefix_path.sh'
+[2.051s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_description/bin'
+[2.052s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_description/lib/pkgconfig/crater_description.pc'
+[2.052s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_description/lib/python3.10/site-packages'
+[2.053s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_description/bin'
+[2.053s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/package.ps1'
+[2.054s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/package.dsv'
+[2.056s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/package.sh'
+[2.057s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/package.bash'
+[2.059s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/package.zsh'
+[2.066s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/sf_CRATER/Simulation02.04/install/crater_description/share/colcon-core/packages/crater_description)
+[2.071s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_gazebo/crater_simulator' with build type 'ament_cmake'
+[2.071s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_gazebo/crater_simulator'
+[2.072s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.072s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.116s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/sf_CRATER/Simulation02.04/build/state_estimation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/state_estimation -- -j16 -l16
+[2.164s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(crater_application)
+[2.172s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_application' for CMake module files
+[2.183s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/sf_CRATER/Simulation02.04/build/state_estimation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/state_estimation
+[2.184s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_application' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/crater_application
+[2.198s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_application' for CMake config files
+[2.217s] Level 1:colcon.colcon_core.shell:create_environment_hook('crater_application', 'cmake_prefix_path')
+[2.218s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/hook/cmake_prefix_path.ps1'
+[2.220s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/hook/cmake_prefix_path.dsv'
+[2.230s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/hook/cmake_prefix_path.sh'
+[2.233s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_application/lib'
+[2.234s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_application/bin'
+[2.235s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_application/lib/pkgconfig/crater_application.pc'
+[2.236s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_application/lib/python3.10/site-packages'
+[2.236s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_application/bin'
+[2.237s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/package.ps1'
+[2.239s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/package.dsv'
+[2.240s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/package.sh'
+[2.242s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/package.bash'
+[2.245s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/package.zsh'
+[2.247s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/sf_CRATER/Simulation02.04/install/crater_application/share/colcon-core/packages/crater_application)
+[2.253s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(crater_application)
+[2.254s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_application' for CMake module files
+[2.262s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_application' for CMake config files
+[2.273s] Level 1:colcon.colcon_core.shell:create_environment_hook('crater_application', 'cmake_prefix_path')
+[2.274s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/hook/cmake_prefix_path.ps1'
+[2.276s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/hook/cmake_prefix_path.dsv'
+[2.278s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/hook/cmake_prefix_path.sh'
+[2.281s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_application/lib'
+[2.283s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_application/bin'
+[2.283s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_application/lib/pkgconfig/crater_application.pc'
+[2.284s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_application/lib/python3.10/site-packages'
+[2.285s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_application/bin'
+[2.286s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/package.ps1'
+[2.288s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/package.dsv'
+[2.290s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/package.sh'
+[2.292s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/package.bash'
+[2.294s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/package.zsh'
+[2.298s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/sf_CRATER/Simulation02.04/install/crater_application/share/colcon-core/packages/crater_application)
+[2.302s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(crater_local_planner)
+[2.303s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_local_planner' for CMake module files
+[2.318s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_local_planner' for CMake config files
+[2.330s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_local_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/crater_local_planner
+[2.334s] Level 1:colcon.colcon_core.shell:create_environment_hook('crater_local_planner', 'cmake_prefix_path')
+[2.335s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/hook/cmake_prefix_path.ps1'
+[2.338s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/hook/cmake_prefix_path.dsv'
+[2.341s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/hook/cmake_prefix_path.sh'
+[2.346s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/lib'
+[2.347s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/bin'
+[2.347s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/lib/pkgconfig/crater_local_planner.pc'
+[2.348s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/lib/python3.10/site-packages'
+[2.349s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/bin'
+[2.350s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/package.ps1'
+[2.352s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/package.dsv'
+[2.353s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/package.sh'
+[2.355s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/package.bash'
+[2.358s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/package.zsh'
+[2.360s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/colcon-core/packages/crater_local_planner)
+[2.374s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(crater_local_planner)
+[2.375s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_local_planner' for CMake module files
+[2.387s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_local_planner' for CMake config files
+[2.400s] Level 1:colcon.colcon_core.shell:create_environment_hook('crater_local_planner', 'cmake_prefix_path')
+[2.401s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/hook/cmake_prefix_path.ps1'
+[2.403s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/hook/cmake_prefix_path.dsv'
+[2.406s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/hook/cmake_prefix_path.sh'
+[2.409s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/lib'
+[2.410s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/bin'
+[2.411s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/lib/pkgconfig/crater_local_planner.pc'
+[2.411s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/lib/python3.10/site-packages'
+[2.412s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/bin'
+[2.413s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/package.ps1'
+[2.415s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/package.dsv'
+[2.417s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/package.sh'
+[2.419s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/package.bash'
+[2.421s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/package.zsh'
+[2.424s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/colcon-core/packages/crater_local_planner)
+[2.428s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(global-planner)
+[2.429s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/global-planner' for CMake module files
+[2.441s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/sf_CRATER/Simulation02.04/build/global-planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/global-planner
+[2.449s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/global-planner' for CMake config files
+[2.459s] Level 1:colcon.colcon_core.shell:create_environment_hook('global-planner', 'cmake_prefix_path')
+[2.460s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/hook/cmake_prefix_path.ps1'
+[2.462s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/hook/cmake_prefix_path.dsv'
+[2.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/hook/cmake_prefix_path.sh'
+[2.468s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/global-planner/bin'
+[2.469s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/global-planner/lib/pkgconfig/global-planner.pc'
+[2.470s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/global-planner/lib/python3.10/site-packages'
+[2.470s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/global-planner/bin'
+[2.471s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/package.ps1'
+[2.473s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/package.dsv'
+[2.475s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/package.sh'
+[2.477s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/package.bash'
+[2.478s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/package.zsh'
+[2.479s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/sf_CRATER/Simulation02.04/install/global-planner/share/colcon-core/packages/global-planner)
+[2.482s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(global-planner)
+[2.482s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/global-planner' for CMake module files
+[2.492s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/global-planner' for CMake config files
+[2.502s] Level 1:colcon.colcon_core.shell:create_environment_hook('global-planner', 'cmake_prefix_path')
+[2.503s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/hook/cmake_prefix_path.ps1'
+[2.505s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/hook/cmake_prefix_path.dsv'
+[2.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/hook/cmake_prefix_path.sh'
+[2.511s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/global-planner/bin'
+[2.512s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/global-planner/lib/pkgconfig/global-planner.pc'
+[2.513s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/global-planner/lib/python3.10/site-packages'
+[2.513s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/global-planner/bin'
+[2.514s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/package.ps1'
+[2.518s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/package.dsv'
+[2.520s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/package.sh'
+[2.522s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/package.bash'
+[2.523s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/package.zsh'
+[2.524s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/sf_CRATER/Simulation02.04/install/global-planner/share/colcon-core/packages/global-planner)
+[2.548s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(state_estimation)
+[2.549s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/state_estimation' for CMake module files
+[2.562s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_aruco': PYTHONPATH=/media/sf_CRATER/Simulation02.04/build/crater_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/sf_CRATER/Simulation02.04/install/crater_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/crater_aruco build --build-base /media/sf_CRATER/Simulation02.04/build/crater_aruco/build install --record /media/sf_CRATER/Simulation02.04/build/crater_aruco/install.log --single-version-externally-managed install_data
+[2.563s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/sf_CRATER/Simulation02.04/build/state_estimation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/state_estimation
+[2.573s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/state_estimation' for CMake config files
+[2.588s] Level 1:colcon.colcon_core.shell:create_environment_hook('state_estimation', 'cmake_prefix_path')
+[2.590s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/hook/cmake_prefix_path.ps1'
+[2.594s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/hook/cmake_prefix_path.dsv'
+[2.599s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/hook/cmake_prefix_path.sh'
+[2.604s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/state_estimation/bin'
+[2.605s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/state_estimation/lib/pkgconfig/state_estimation.pc'
+[2.605s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/state_estimation/lib/python3.10/site-packages'
+[2.607s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/state_estimation/bin'
+[2.608s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/package.ps1'
+[2.611s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/package.dsv'
+[2.613s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/package.sh'
+[2.623s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/package.bash'
+[2.632s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/package.zsh'
+[2.639s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/sf_CRATER/Simulation02.04/install/state_estimation/share/colcon-core/packages/state_estimation)
+[2.650s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(state_estimation)
+[2.650s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/state_estimation' for CMake module files
+[2.660s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/state_estimation' for CMake config files
+[2.670s] Level 1:colcon.colcon_core.shell:create_environment_hook('state_estimation', 'cmake_prefix_path')
+[2.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/hook/cmake_prefix_path.ps1'
+[2.673s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/hook/cmake_prefix_path.dsv'
+[2.675s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/hook/cmake_prefix_path.sh'
+[2.679s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/state_estimation/bin'
+[2.680s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/state_estimation/lib/pkgconfig/state_estimation.pc'
+[2.681s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/state_estimation/lib/python3.10/site-packages'
+[2.682s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/state_estimation/bin'
+[2.683s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/package.ps1'
+[2.686s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/package.dsv'
+[2.688s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/package.sh'
+[2.694s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/package.bash'
+[2.698s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/package.zsh'
+[2.703s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/sf_CRATER/Simulation02.04/install/state_estimation/share/colcon-core/packages/state_estimation)
+[2.753s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_simulator': CMAKE_PREFIX_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description:/media/sf_CRATER/Simulation02.04/install/state_estimation:/media/sf_CRATER/Simulation02.04/install/global-planner:/media/sf_CRATER/Simulation02.04/install/crater_bringup:/media/sf_CRATER/Simulation02.04/install/crater_simulator:/media/sf_CRATER/Simulation02.04/install/crater_local_planner:/media/sf_CRATER/Simulation02.04/install/crater_global_planner:/media/sf_CRATER/Simulation02.04/install/crater_application:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/models:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/crater_simulator -- -j16 -l16
+[3.076s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_aruco' for CMake module files
+[3.080s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_aruco' returned '0': PYTHONPATH=/media/sf_CRATER/Simulation02.04/build/crater_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/sf_CRATER/Simulation02.04/install/crater_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/crater_aruco build --build-base /media/sf_CRATER/Simulation02.04/build/crater_aruco/build install --record /media/sf_CRATER/Simulation02.04/build/crater_aruco/install.log --single-version-externally-managed install_data
+[3.091s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_aruco' for CMake config files
+[3.119s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_aruco/lib'
+[3.120s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_aruco/bin'
+[3.120s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_aruco/lib/pkgconfig/crater_aruco.pc'
+[3.122s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_aruco/lib/python3.10/site-packages'
+[3.122s] Level 1:colcon.colcon_core.shell:create_environment_hook('crater_aruco', 'pythonpath')
+[3.123s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_aruco/share/crater_aruco/hook/pythonpath.ps1'
+[3.125s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/sf_CRATER/Simulation02.04/install/crater_aruco/share/crater_aruco/hook/pythonpath.dsv'
+[3.128s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_aruco/share/crater_aruco/hook/pythonpath.sh'
+[3.130s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_aruco/bin'
+[3.131s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(crater_aruco)
+[3.132s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_aruco/share/crater_aruco/package.ps1'
+[3.135s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/sf_CRATER/Simulation02.04/install/crater_aruco/share/crater_aruco/package.dsv'
+[3.137s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_aruco/share/crater_aruco/package.sh'
+[3.139s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_aruco/share/crater_aruco/package.bash'
+[3.142s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_aruco/share/crater_aruco/package.zsh'
+[3.146s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/sf_CRATER/Simulation02.04/install/crater_aruco/share/colcon-core/packages/crater_aruco)
+[3.461s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_simulator' returned '0': CMAKE_PREFIX_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description:/media/sf_CRATER/Simulation02.04/install/state_estimation:/media/sf_CRATER/Simulation02.04/install/global-planner:/media/sf_CRATER/Simulation02.04/install/crater_bringup:/media/sf_CRATER/Simulation02.04/install/crater_simulator:/media/sf_CRATER/Simulation02.04/install/crater_local_planner:/media/sf_CRATER/Simulation02.04/install/crater_global_planner:/media/sf_CRATER/Simulation02.04/install/crater_application:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/models:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/crater_simulator -- -j16 -l16
+[3.482s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_simulator': CMAKE_PREFIX_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description:/media/sf_CRATER/Simulation02.04/install/state_estimation:/media/sf_CRATER/Simulation02.04/install/global-planner:/media/sf_CRATER/Simulation02.04/install/crater_bringup:/media/sf_CRATER/Simulation02.04/install/crater_simulator:/media/sf_CRATER/Simulation02.04/install/crater_local_planner:/media/sf_CRATER/Simulation02.04/install/crater_global_planner:/media/sf_CRATER/Simulation02.04/install/crater_application:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/models:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/crater_simulator
+[3.629s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(crater_simulator)
+[3.629s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_simulator' for CMake module files
+[3.630s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_simulator' returned '0': CMAKE_PREFIX_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description:/media/sf_CRATER/Simulation02.04/install/state_estimation:/media/sf_CRATER/Simulation02.04/install/global-planner:/media/sf_CRATER/Simulation02.04/install/crater_bringup:/media/sf_CRATER/Simulation02.04/install/crater_simulator:/media/sf_CRATER/Simulation02.04/install/crater_local_planner:/media/sf_CRATER/Simulation02.04/install/crater_global_planner:/media/sf_CRATER/Simulation02.04/install/crater_application:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/models:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/crater_simulator
+[3.641s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_simulator' for CMake config files
+[3.655s] Level 1:colcon.colcon_core.shell:create_environment_hook('crater_simulator', 'cmake_prefix_path')
+[3.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/hook/cmake_prefix_path.ps1'
+[3.660s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/hook/cmake_prefix_path.dsv'
+[3.662s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/hook/cmake_prefix_path.sh'
+[3.666s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_simulator/lib'
+[3.667s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_simulator/bin'
+[3.668s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_simulator/lib/pkgconfig/crater_simulator.pc'
+[3.669s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_simulator/lib/python3.10/site-packages'
+[3.670s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_simulator/bin'
+[3.671s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/package.ps1'
+[3.673s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/package.dsv'
+[3.675s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/package.sh'
+[3.678s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/package.bash'
+[3.680s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/package.zsh'
+[3.681s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/sf_CRATER/Simulation02.04/install/crater_simulator/share/colcon-core/packages/crater_simulator)
+[3.686s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(crater_simulator)
+[3.687s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_simulator' for CMake module files
+[3.698s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_simulator' for CMake config files
+[3.709s] Level 1:colcon.colcon_core.shell:create_environment_hook('crater_simulator', 'cmake_prefix_path')
+[3.710s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/hook/cmake_prefix_path.ps1'
+[3.712s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/hook/cmake_prefix_path.dsv'
+[3.715s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/hook/cmake_prefix_path.sh'
+[3.719s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_simulator/lib'
+[3.720s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_simulator/bin'
+[3.721s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_simulator/lib/pkgconfig/crater_simulator.pc'
+[3.722s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_simulator/lib/python3.10/site-packages'
+[3.723s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_simulator/bin'
+[3.724s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/package.ps1'
+[3.726s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/package.dsv'
+[3.730s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/package.sh'
+[3.734s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/package.bash'
+[3.737s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/package.zsh'
+[3.741s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/sf_CRATER/Simulation02.04/install/crater_simulator/share/colcon-core/packages/crater_simulator)
+[3.746s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_gazebo/crater_bringup' with build type 'ament_cmake'
+[3.748s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_gazebo/crater_bringup'
+[3.749s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.757s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.984s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_bringup': CMAKE_PREFIX_PATH=/media/sf_CRATER/Simulation02.04/install/crater_simulator:/media/sf_CRATER/Simulation02.04/install/crater_global_planner:/media/sf_CRATER/Simulation02.04/install/crater_description:/media/sf_CRATER/Simulation02.04/install/crater_application:/media/sf_CRATER/Simulation02.04/install/state_estimation:/media/sf_CRATER/Simulation02.04/install/global-planner:/media/sf_CRATER/Simulation02.04/install/crater_bringup:/media/sf_CRATER/Simulation02.04/install/crater_local_planner:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble GZ_SIM_PLUGIN_PATH=/media/sf_CRATER/Simulation02.04/install/crater_simulator/lib/crater_simulator GZ_SIM_RESOURCE_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/models:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/crater_bringup -- -j16 -l16
+[4.083s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_bringup' returned '0': CMAKE_PREFIX_PATH=/media/sf_CRATER/Simulation02.04/install/crater_simulator:/media/sf_CRATER/Simulation02.04/install/crater_global_planner:/media/sf_CRATER/Simulation02.04/install/crater_description:/media/sf_CRATER/Simulation02.04/install/crater_application:/media/sf_CRATER/Simulation02.04/install/state_estimation:/media/sf_CRATER/Simulation02.04/install/global-planner:/media/sf_CRATER/Simulation02.04/install/crater_bringup:/media/sf_CRATER/Simulation02.04/install/crater_local_planner:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble GZ_SIM_PLUGIN_PATH=/media/sf_CRATER/Simulation02.04/install/crater_simulator/lib/crater_simulator GZ_SIM_RESOURCE_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/models:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/crater_bringup -- -j16 -l16
+[4.109s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_bringup': CMAKE_PREFIX_PATH=/media/sf_CRATER/Simulation02.04/install/crater_simulator:/media/sf_CRATER/Simulation02.04/install/crater_global_planner:/media/sf_CRATER/Simulation02.04/install/crater_description:/media/sf_CRATER/Simulation02.04/install/crater_application:/media/sf_CRATER/Simulation02.04/install/state_estimation:/media/sf_CRATER/Simulation02.04/install/global-planner:/media/sf_CRATER/Simulation02.04/install/crater_bringup:/media/sf_CRATER/Simulation02.04/install/crater_local_planner:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble GZ_SIM_PLUGIN_PATH=/media/sf_CRATER/Simulation02.04/install/crater_simulator/lib/crater_simulator GZ_SIM_RESOURCE_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/models:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/crater_bringup
+[4.176s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(crater_bringup)
+[4.177s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_bringup' for CMake module files
+[4.179s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_bringup' returned '0': CMAKE_PREFIX_PATH=/media/sf_CRATER/Simulation02.04/install/crater_simulator:/media/sf_CRATER/Simulation02.04/install/crater_global_planner:/media/sf_CRATER/Simulation02.04/install/crater_description:/media/sf_CRATER/Simulation02.04/install/crater_application:/media/sf_CRATER/Simulation02.04/install/state_estimation:/media/sf_CRATER/Simulation02.04/install/global-planner:/media/sf_CRATER/Simulation02.04/install/crater_bringup:/media/sf_CRATER/Simulation02.04/install/crater_local_planner:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble GZ_SIM_PLUGIN_PATH=/media/sf_CRATER/Simulation02.04/install/crater_simulator/lib/crater_simulator GZ_SIM_RESOURCE_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/models:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/crater_bringup
+[4.189s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_bringup' for CMake config files
+[4.200s] Level 1:colcon.colcon_core.shell:create_environment_hook('crater_bringup', 'cmake_prefix_path')
+[4.200s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_bringup/share/crater_bringup/hook/cmake_prefix_path.ps1'
+[4.203s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/sf_CRATER/Simulation02.04/install/crater_bringup/share/crater_bringup/hook/cmake_prefix_path.dsv'
+[4.206s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_bringup/share/crater_bringup/hook/cmake_prefix_path.sh'
+[4.209s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_bringup/bin'
+[4.210s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_bringup/lib/pkgconfig/crater_bringup.pc'
+[4.210s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_bringup/lib/python3.10/site-packages'
+[4.211s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_bringup/bin'
+[4.212s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_bringup/share/crater_bringup/package.ps1'
+[4.214s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/sf_CRATER/Simulation02.04/install/crater_bringup/share/crater_bringup/package.dsv'
+[4.216s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_bringup/share/crater_bringup/package.sh'
+[4.218s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_bringup/share/crater_bringup/package.bash'
+[4.221s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_bringup/share/crater_bringup/package.zsh'
+[4.225s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/sf_CRATER/Simulation02.04/install/crater_bringup/share/colcon-core/packages/crater_bringup)
+[4.235s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(crater_bringup)
+[4.235s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_bringup' for CMake module files
+[4.242s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_bringup' for CMake config files
+[4.250s] Level 1:colcon.colcon_core.shell:create_environment_hook('crater_bringup', 'cmake_prefix_path')
+[4.250s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_bringup/share/crater_bringup/hook/cmake_prefix_path.ps1'
+[4.252s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/sf_CRATER/Simulation02.04/install/crater_bringup/share/crater_bringup/hook/cmake_prefix_path.dsv'
+[4.254s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/sf_CRATER/Simulation02.04/install/crater_bringup/share/crater_bringup/hook/cmake_prefix_path.sh'
+[4.258s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_bringup/bin'
+[4.259s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_bringup/lib/pkgconfig/crater_bringup.pc'
+[4.259s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_bringup/lib/python3.10/site-packages'
+[4.260s] Level 1:colcon.colcon_core.environment:checking '/media/sf_CRATER/Simulation02.04/install/crater_bringup/bin'
+[4.261s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_bringup/share/crater_bringup/package.ps1'
+[4.263s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/sf_CRATER/Simulation02.04/install/crater_bringup/share/crater_bringup/package.dsv'
+[4.264s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_bringup/share/crater_bringup/package.sh'
+[4.267s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_bringup/share/crater_bringup/package.bash'
+[4.273s] INFO:colcon.colcon_core.shell:Creating package script '/media/sf_CRATER/Simulation02.04/install/crater_bringup/share/crater_bringup/package.zsh'
+[4.275s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/sf_CRATER/Simulation02.04/install/crater_bringup/share/colcon-core/packages/crater_bringup)
+[4.276s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.277s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.278s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.278s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.291s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.294s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.294s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.326s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.327s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/sf_CRATER/Simulation02.04/install/local_setup.ps1'
+[4.331s] INFO:colcon.colcon_core.shell:Creating prefix util module '/media/sf_CRATER/Simulation02.04/install/_local_setup_util_ps1.py'
+[4.338s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/sf_CRATER/Simulation02.04/install/setup.ps1'
+[4.377s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/sf_CRATER/Simulation02.04/install/local_setup.sh'
+[4.381s] INFO:colcon.colcon_core.shell:Creating prefix util module '/media/sf_CRATER/Simulation02.04/install/_local_setup_util_sh.py'
+[4.384s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/sf_CRATER/Simulation02.04/install/setup.sh'
+[4.421s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/sf_CRATER/Simulation02.04/install/local_setup.bash'
+[4.424s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/sf_CRATER/Simulation02.04/install/setup.bash'
+[4.443s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/sf_CRATER/Simulation02.04/install/local_setup.zsh'
+[4.446s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/sf_CRATER/Simulation02.04/install/setup.zsh'

@@ -1,0 +1,8 @@
+source;share/crater_application/hook/cmake_prefix_path.ps1
+source;share/crater_application/hook/cmake_prefix_path.dsv
+source;share/crater_application/hook/cmake_prefix_path.sh
+source;share/crater_application/local_setup.bash
+source;share/crater_application/local_setup.dsv
+source;share/crater_application/local_setup.ps1
+source;share/crater_application/local_setup.sh
+source;share/crater_application/local_setup.zsh

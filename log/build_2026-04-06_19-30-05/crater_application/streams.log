@@ -1,0 +1,26 @@
+[0.303s] Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_application': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/crater_application -- -j16 -l16
+[0.945s] Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_application' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/crater_application -- -j16 -l16
+[1.156s] Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_application': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/crater_application
+[1.177s] -- Install configuration: ""
+[1.180s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_application/lib/crater_application/path_from_csv_node.py
+[1.182s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_application/lib/crater_application/path_follower_node.py
+[1.183s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_application/lib/crater_application/twist_to_wheels_node.py
+[1.189s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_application/lib/crater_application/wheels_cmd_demux_node.py
+[1.193s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/config
+[1.202s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/config/global_path_world.csv
+[1.203s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_application/share/ament_index/resource_index/package_run_dependencies/crater_application
+[1.205s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_application/share/ament_index/resource_index/parent_prefix_path/crater_application
+[1.210s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/environment/ament_prefix_path.sh
+[1.212s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/environment/ament_prefix_path.dsv
+[1.215s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/environment/path.sh
+[1.219s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/environment/path.dsv
+[1.221s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/local_setup.bash
+[1.225s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/local_setup.sh
+[1.226s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/local_setup.zsh
+[1.228s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/local_setup.dsv
+[1.229s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/package.dsv
+[1.234s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_application/share/ament_index/resource_index/packages/crater_application
+[1.237s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/cmake/crater_applicationConfig.cmake
+[1.240s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/cmake/crater_applicationConfig-version.cmake
+[1.242s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/package.xml
+[1.549s] Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_application' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/crater_application

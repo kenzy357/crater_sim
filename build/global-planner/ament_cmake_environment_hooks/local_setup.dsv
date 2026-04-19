@@ -1,0 +1,2 @@
+source;share/global-planner/environment/ament_prefix_path.sh
+source;share/global-planner/environment/path.sh

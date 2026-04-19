@@ -1,0 +1,15 @@
+/media/sf_CRATER/Simulation02.04/install/global-planner/share/ament_index/resource_index/package_run_dependencies/global-planner
+/media/sf_CRATER/Simulation02.04/install/global-planner/share/ament_index/resource_index/parent_prefix_path/global-planner
+/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/environment/ament_prefix_path.sh
+/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/environment/ament_prefix_path.dsv
+/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/environment/path.sh
+/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/environment/path.dsv
+/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/local_setup.bash
+/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/local_setup.sh
+/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/local_setup.zsh
+/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/local_setup.dsv
+/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/package.dsv
+/media/sf_CRATER/Simulation02.04/install/global-planner/share/ament_index/resource_index/packages/global-planner
+/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/cmake/global-plannerConfig.cmake
+/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/cmake/global-plannerConfig-version.cmake
+/media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/package.xml

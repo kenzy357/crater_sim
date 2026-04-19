@@ -1,0 +1,27 @@
+[0.291s] Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/crater_description -- -j16 -l16
+[0.856s] Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/crater_description -- -j16 -l16
+[0.911s] Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/crater_description
+[1.107s] -- Install configuration: ""
+[1.116s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/models
+[1.117s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/models/rover
+[1.119s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/models/rover/model.config
+[1.121s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/models/rover/model.sdf
+[1.127s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/models/rover/terby.sdf
+[1.129s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/environment/crater_description.dsv
+[1.132s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/environment/crater_description.sh
+[1.133s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_description/share/ament_index/resource_index/package_run_dependencies/crater_description
+[1.143s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_description/share/ament_index/resource_index/parent_prefix_path/crater_description
+[1.144s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/environment/ament_prefix_path.sh
+[1.152s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/environment/ament_prefix_path.dsv
+[1.154s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/environment/path.sh
+[1.162s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/environment/path.dsv
+[1.165s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/local_setup.bash
+[1.173s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/local_setup.sh
+[1.175s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/local_setup.zsh
+[1.188s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/local_setup.dsv
+[1.194s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/package.dsv
+[1.206s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_description/share/ament_index/resource_index/packages/crater_description
+[1.209s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/cmake/crater_descriptionConfig.cmake
+[1.214s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/cmake/crater_descriptionConfig-version.cmake
+[1.217s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/package.xml
+[1.387s] Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/crater_description

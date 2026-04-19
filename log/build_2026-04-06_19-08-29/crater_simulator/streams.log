@@ -1,0 +1,272 @@
+[0.554s] Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_simulator': AMENT_PREFIX_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/models /usr/bin/cmake /media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_gazebo/crater_simulator -DCMAKE_INSTALL_PREFIX=/media/sf_CRATER/Simulation02.04/install/crater_simulator
+[0.754s] -- The C compiler identification is GNU 11.4.0
+[1.214s] -- The CXX compiler identification is GNU 11.4.0
+[1.280s] -- Detecting C compiler ABI info
+[1.912s] -- Detecting C compiler ABI info - done
+[1.932s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.938s] -- Detecting C compile features
+[1.953s] -- Detecting C compile features - done
+[1.967s] -- Detecting CXX compiler ABI info
+[2.579s] -- Detecting CXX compiler ABI info - done
+[2.598s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.600s] -- Detecting CXX compile features
+[2.602s] -- Detecting CXX compile features - done
+[2.635s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.808s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.064s] -- Found crater_description: 0.0.0 (/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/cmake)
+[3.102s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[3.103s] -- Searching for dependencies of ignition-plugin1
+[3.105s] -- Searching for <ignition-plugin1> component [register]
+[3.121s] -- Looking for ignition-plugin1-register -- found version 1.4.0
+[3.123s] -- Searching for dependencies of ignition-plugin1-register
+[3.137s] -- Looking for ignition-common4 -- found version 4.7.0
+[3.138s] -- Searching for dependencies of ignition-common4
+[3.139s] -- Looking for dlfcn.h - found
+[3.145s] -- Looking for libdl - found
+[3.146s] -- Found DL: TRUE  
+[3.152s] -- Checking for module 'uuid'
+[3.174s] --   Found uuid, version 2.37.2
+[3.218s] -- Found UUID: TRUE  
+[3.221s] -- Searching for <ignition-common4> component [profiler]
+[3.231s] -- Looking for ignition-common4-profiler -- found version 4.7.0
+[3.232s] -- Searching for dependencies of ignition-common4-profiler
+[3.782s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[3.813s] -- Looking for ignition-gazebo6 -- found version 6.16.0
+[3.815s] -- Searching for dependencies of ignition-gazebo6
+[3.829s] -- Looking for sdformat12 -- found version 12.7.2
+[3.830s] -- Searching for dependencies of sdformat12
+[3.837s] -- Checking for module 'tinyxml2'
+[3.860s] --   Found tinyxml2, version 9.0.0
+[3.914s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.914s] -- Searching for dependencies of ignition-math6
+[3.930s] -- Looking for ignition-utils1 -- found version 1.5.1
+[3.932s] -- Searching for dependencies of ignition-utils1
+[3.936s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[3.938s] -- Searching for dependencies of ignition-plugin1
+[3.939s] -- Searching for <ignition-plugin1> component [loader]
+[3.947s] -- Looking for ignition-plugin1-loader -- found version 1.4.0
+[3.948s] -- Searching for dependencies of ignition-plugin1-loader
+[3.951s] -- Searching for <ignition-plugin1> component [register]
+[3.963s] -- Looking for ignition-transport11 -- found version 11.4.1
+[3.964s] -- Searching for dependencies of ignition-transport11
+[4.002s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[4.007s] -- Checking for module 'libzmq >= 4'
+[4.039s] --   Found libzmq , version 4.3.4
+[4.093s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[4.107s] -- Looking for ignition-utils1 -- found version 1.5.1
+[4.109s] -- Searching for dependencies of ignition-utils1
+[4.110s] -- Searching for <ignition-utils1> component [cli]
+[4.117s] -- Looking for ignition-utils1-cli -- found version 1.5.1
+[4.118s] -- Searching for dependencies of ignition-utils1-cli
+[4.130s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[4.131s] -- Searching for dependencies of ignition-msgs8
+[4.155s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[4.157s] -- Looking for ignition-math6 -- found version 6.15.1
+[4.172s] -- Searching for <ignition-transport11> component [log]
+[4.182s] -- Looking for ignition-transport11-log -- found version 11.4.1
+[4.183s] -- Searching for dependencies of ignition-transport11-log
+[4.184s] -- Searching for <ignition-transport11> component [parameters]
+[4.195s] -- Looking for ignition-transport11-parameters -- found version 11.4.1
+[4.195s] -- Searching for dependencies of ignition-transport11-parameters
+[4.199s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[4.200s] -- Looking for ignition-common4 -- found version 4.7.0
+[4.201s] -- Searching for dependencies of ignition-common4
+[4.203s] -- Looking for dlfcn.h - found
+[4.204s] -- Looking for libdl - found
+[4.208s] -- Searching for <ignition-common4> component [profiler]
+[4.209s] -- Searching for <ignition-common4> component [events]
+[4.218s] -- Looking for ignition-common4-events -- found version 4.7.0
+[4.220s] -- Searching for dependencies of ignition-common4-events
+[4.221s] -- Looking for ignition-math6 -- found version 6.15.1
+[4.222s] -- Searching for <ignition-common4> component [av]
+[4.232s] -- Looking for ignition-common4-av -- found version 4.7.0
+[4.233s] -- Searching for dependencies of ignition-common4-av
+[4.240s] -- Checking for module 'libswscale'
+[4.265s] --   Found libswscale, version 5.9.100
+[4.314s] -- Found SWSCALE: TRUE  
+[4.320s] -- Checking for module 'libavdevice >= 56.4.100'
+[4.346s] --   Found libavdevice , version 58.13.100
+[4.394s] -- Found AVDEVICE: TRUE (Required is at least version "56.4.100") 
+[4.401s] -- Checking for module 'libavformat'
+[4.425s] --   Found libavformat, version 58.76.100
+[4.486s] -- Found AVFORMAT: TRUE  
+[4.493s] -- Checking for module 'libavcodec'
+[4.516s] --   Found libavcodec, version 58.134.100
+[4.564s] -- Found AVCODEC: TRUE  
+[4.574s] -- Checking for module 'libavutil'
+[4.597s] --   Found libavutil, version 56.70.100
+[4.651s] -- Found AVUTIL: TRUE  
+[4.666s] -- Looking for ignition-fuel_tools7 -- found version 7.3.0
+[4.668s] -- Searching for dependencies of ignition-fuel_tools7
+[4.797s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[4.823s] -- Checking for module 'jsoncpp'
+[4.854s] --   Found jsoncpp, version 1.9.5
+[4.904s] -- Found JSONCPP: TRUE  
+[4.922s] -- Checking for module 'libzip'
+[4.946s] --   Found libzip, version 1.7.3
+[4.998s] -- Found ZIP: TRUE  
+[4.999s] -- Looking for ignition-common4 -- found version 4.7.0
+[5.000s] -- Looking for ignition-math6 -- found version 6.15.1
+[5.002s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[5.013s] -- Looking for ignition-gui6 -- found version 6.8.0
+[5.015s] -- Searching for dependencies of ignition-gui6
+[5.049s] -- Looking for ignition-math6 -- found version 6.15.1
+[5.050s] -- Looking for ignition-common4 -- found version 4.7.0
+[5.052s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[5.053s] -- Looking for ignition-transport11 -- found version 11.4.1
+[5.063s] -- Looking for ignition-rendering6 -- found version 6.6.3
+[5.064s] -- Searching for dependencies of ignition-rendering6
+[5.065s] -- Looking for ignition-math6 -- found version 6.15.1
+[5.066s] -- Searching for dependencies of ignition-math6
+[5.067s] -- Searching for <ignition-math6> component [eigen3]
+[5.074s] -- Looking for ignition-math6-eigen3 -- found version 6.15.1
+[5.075s] -- Searching for dependencies of ignition-math6-eigen3
+[5.097s] -- Looking for ignition-common4 -- found version 4.7.0
+[5.098s] -- Searching for dependencies of ignition-common4
+[5.099s] -- Looking for dlfcn.h - found
+[5.100s] -- Looking for libdl - found
+[5.106s] -- Searching for <ignition-common4> component [graphics]
+[5.119s] -- Looking for ignition-common4-graphics -- found version 4.7.0
+[5.121s] -- Searching for dependencies of ignition-common4-graphics
+[5.122s] -- Looking for ignition-math6 -- found version 6.15.1
+[5.123s] -- Looking for ignition-utils1 -- found version 1.5.1
+[5.124s] -- Searching for <ignition-common4> component [events]
+[5.125s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[5.125s] -- Searching for dependencies of ignition-plugin1
+[5.126s] -- Searching for <ignition-plugin1> component [all]
+[5.133s] -- Looking for all libraries of ignition-plugin1 -- found version 1.4.0
+[5.134s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[5.136s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[5.250s] -- Looking for ignition-physics5 -- found version 5.3.2
+[5.253s] -- Searching for dependencies of ignition-physics5
+[5.254s] -- Looking for ignition-math6 -- found version 6.15.1
+[5.254s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[5.255s] -- Looking for ignition-utils1 -- found version 1.5.1
+[5.256s] -- Searching for <ignition-physics5> component [heightmap]
+[5.263s] -- Looking for ignition-physics5-heightmap -- found version 5.3.2
+[5.264s] -- Searching for dependencies of ignition-physics5-heightmap
+[5.265s] -- Looking for ignition-common4 -- found version 4.7.0
+[5.266s] -- Searching for <ignition-physics5> component [mesh]
+[5.276s] -- Looking for ignition-physics5-mesh -- found version 5.3.2
+[5.277s] -- Searching for dependencies of ignition-physics5-mesh
+[5.278s] -- Looking for ignition-common4 -- found version 4.7.0
+[5.279s] -- Searching for <ignition-physics5> component [sdf]
+[5.287s] -- Looking for ignition-physics5-sdf -- found version 5.3.2
+[5.288s] -- Searching for dependencies of ignition-physics5-sdf
+[5.289s] -- Looking for sdformat12 -- found version 12.7.2
+[5.308s] -- Looking for ignition-sensors6 -- found version 6.8.0
+[5.310s] -- Searching for dependencies of ignition-sensors6
+[5.333s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[5.334s] -- Looking for ignition-math6 -- found version 6.15.1
+[5.335s] -- Looking for ignition-common4 -- found version 4.7.0
+[5.336s] -- Looking for ignition-transport11 -- found version 11.4.1
+[5.337s] -- Looking for ignition-rendering6 -- found version 6.6.3
+[5.338s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[5.339s] -- Looking for sdformat12 -- found version 12.7.2
+[5.340s] -- Searching for <ignition-sensors6> component [air_pressure]
+[5.349s] -- Looking for ignition-sensors6-air_pressure -- found version 6.8.0
+[5.351s] -- Searching for dependencies of ignition-sensors6-air_pressure
+[5.352s] -- Searching for <ignition-sensors6> component [altimeter]
+[5.361s] -- Looking for ignition-sensors6-altimeter -- found version 6.8.0
+[5.363s] -- Searching for dependencies of ignition-sensors6-altimeter
+[5.363s] -- Searching for <ignition-sensors6> component [imu]
+[5.372s] -- Looking for ignition-sensors6-imu -- found version 6.8.0
+[5.373s] -- Searching for dependencies of ignition-sensors6-imu
+[5.375s] -- Searching for <ignition-sensors6> component [force_torque]
+[5.384s] -- Looking for ignition-sensors6-force_torque -- found version 6.8.0
+[5.386s] -- Searching for dependencies of ignition-sensors6-force_torque
+[5.387s] -- Searching for <ignition-sensors6> component [logical_camera]
+[5.399s] -- Looking for ignition-sensors6-logical_camera -- found version 6.8.0
+[5.400s] -- Searching for dependencies of ignition-sensors6-logical_camera
+[5.402s] -- Searching for <ignition-sensors6> component [magnetometer]
+[5.414s] -- Looking for ignition-sensors6-magnetometer -- found version 6.8.0
+[5.415s] -- Searching for dependencies of ignition-sensors6-magnetometer
+[5.417s] -- Searching for <ignition-sensors6> component [navsat]
+[5.427s] -- Looking for ignition-sensors6-navsat -- found version 6.8.0
+[5.433s] -- Searching for dependencies of ignition-sensors6-navsat
+[5.435s] -- Searching for <ignition-sensors6> component [rendering]
+[5.440s] -- Looking for ignition-sensors6-rendering -- found version 6.8.0
+[5.442s] -- Searching for dependencies of ignition-sensors6-rendering
+[5.443s] -- Searching for <ignition-sensors6> component [lidar]
+[5.455s] -- Looking for ignition-sensors6-lidar -- found version 6.8.0
+[5.457s] -- Searching for dependencies of ignition-sensors6-lidar
+[5.459s] -- Looking for ignition-sensors6 -- found version 6.8.0
+[5.460s] -- Searching for <ignition-sensors6> component [gpu_lidar]
+[5.467s] -- Looking for ignition-sensors6-gpu_lidar -- found version 6.8.0
+[5.468s] -- Searching for dependencies of ignition-sensors6-gpu_lidar
+[5.470s] -- Looking for ignition-sensors6 -- found version 6.8.0
+[5.471s] -- Searching for <ignition-sensors6> component [camera]
+[5.483s] -- Looking for ignition-sensors6-camera -- found version 6.8.0
+[5.485s] -- Searching for dependencies of ignition-sensors6-camera
+[5.487s] -- Looking for ignition-sensors6 -- found version 6.8.0
+[5.489s] -- Searching for <ignition-sensors6> component [boundingbox_camera]
+[5.498s] -- Looking for ignition-sensors6-boundingbox_camera -- found version 6.8.0
+[5.499s] -- Searching for dependencies of ignition-sensors6-boundingbox_camera
+[5.501s] -- Searching for <ignition-sensors6> component [segmentation_camera]
+[5.510s] -- Looking for ignition-sensors6-segmentation_camera -- found version 6.8.0
+[5.511s] -- Searching for dependencies of ignition-sensors6-segmentation_camera
+[5.514s] -- Searching for <ignition-sensors6> component [depth_camera]
+[5.525s] -- Looking for ignition-sensors6-depth_camera -- found version 6.8.0
+[5.526s] -- Searching for dependencies of ignition-sensors6-depth_camera
+[5.527s] -- Looking for ignition-sensors6 -- found version 6.8.0
+[5.529s] -- Searching for <ignition-sensors6> component [rgbd_camera]
+[5.540s] -- Looking for ignition-sensors6-rgbd_camera -- found version 6.8.0
+[5.540s] -- Searching for dependencies of ignition-sensors6-rgbd_camera
+[5.541s] -- Looking for ignition-sensors6 -- found version 6.8.0
+[5.542s] -- Searching for <ignition-sensors6> component [thermal_camera]
+[5.554s] -- Looking for ignition-sensors6-thermal_camera -- found version 6.8.0
+[5.555s] -- Searching for dependencies of ignition-sensors6-thermal_camera
+[5.556s] -- Looking for ignition-sensors6 -- found version 6.8.0
+[5.558s] -- Looking for ignition-rendering6 -- found version 6.6.3
+[5.559s] -- Looking for ignition-math6 -- found version 6.15.1
+[5.568s] -- Looking for ignition-utils1 -- found version 1.5.1
+[5.598s] -- Compiling against Gazebo Fortress
+[5.606s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.832s] -- Configuring done
+[6.066s] -- Generating done
+[6.208s] -- Build files have been written to: /media/sf_CRATER/Simulation02.04/build/crater_simulator
+[6.225s] Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_simulator' returned '0': AMENT_PREFIX_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/models /usr/bin/cmake /media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_gazebo/crater_simulator -DCMAKE_INSTALL_PREFIX=/media/sf_CRATER/Simulation02.04/install/crater_simulator
+[6.231s] Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_simulator': AMENT_PREFIX_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/models /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/crater_simulator -- -j16 -l16
+[6.247s] gmake: Warning: File 'Makefile' has modification time 1.5 s in the future
+[6.300s] gmake[1]: Warning: File 'CMakeFiles/Makefile2' has modification time 1.5 s in the future
+[6.308s] gmake[2]: Warning: File 'CMakeFiles/BasicSystem.dir/flags.make' has modification time 1.4 s in the future
+[6.309s] gmake[2]: Warning: File 'CMakeFiles/FullSystem.dir/flags.make' has modification time 1.4 s in the future
+[6.325s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[6.327s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[6.337s] gmake[2]: Warning: File 'CMakeFiles/FullSystem.dir/flags.make' has modification time 1.4 s in the future
+[6.340s] gmake[2]: Warning: File 'CMakeFiles/BasicSystem.dir/flags.make' has modification time 1.4 s in the future
+[6.355s] [ 50%] [32mBuilding CXX object CMakeFiles/FullSystem.dir/src/FullSystem.cc.o[0m
+[6.357s] [ 50%] [32mBuilding CXX object CMakeFiles/BasicSystem.dir/src/BasicSystem.cc.o[0m
+[12.139s] [ 75%] [32m[1mLinking CXX shared library libBasicSystem.so[0m
+[12.186s] [100%] [32m[1mLinking CXX shared library libFullSystem.so[0m
+[13.033s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[13.052s] [100%] Built target FullSystem
+[13.164s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[13.179s] [100%] Built target BasicSystem
+[13.180s] gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+[13.200s] gmake: warning:  Clock skew detected.  Your build may be incomplete.
+[13.206s] Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_simulator' returned '0': AMENT_PREFIX_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/models /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/crater_simulator -- -j16 -l16
+[13.217s] Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_simulator': AMENT_PREFIX_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/models /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/crater_simulator
+[13.227s] -- Install configuration: ""
+[13.231s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_simulator/lib/crater_simulator/libBasicSystem.so
+[13.340s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_simulator/lib/crater_simulator/libFullSystem.so
+[13.464s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/worlds
+[13.469s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/worlds/marsyard.sdf
+[13.480s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/environment/crater_simulator.dsv
+[13.488s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/environment/crater_simulator.sh
+[13.501s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_simulator/share/ament_index/resource_index/package_run_dependencies/crater_simulator
+[13.511s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_simulator/share/ament_index/resource_index/parent_prefix_path/crater_simulator
+[13.520s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/environment/ament_prefix_path.sh
+[13.533s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/environment/ament_prefix_path.dsv
+[13.540s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/environment/path.sh
+[13.548s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/environment/path.dsv
+[13.558s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/local_setup.bash
+[13.568s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/local_setup.sh
+[13.577s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/local_setup.zsh
+[13.585s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/local_setup.dsv
+[13.593s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/package.dsv
+[13.605s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_simulator/share/ament_index/resource_index/packages/crater_simulator
+[13.615s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/cmake/crater_simulatorConfig.cmake
+[13.626s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/cmake/crater_simulatorConfig-version.cmake
+[13.635s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_simulator/share/crater_simulator/package.xml
+[13.645s] Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_simulator' returned '0': AMENT_PREFIX_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/media/sf_CRATER/Simulation02.04/install/crater_description/share/crater_description/models /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/crater_simulator

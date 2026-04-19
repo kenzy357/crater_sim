@@ -1,0 +1,17 @@
+/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/config/ekf.yaml
+/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/description/rover_model.urdf
+/media/sf_CRATER/Simulation02.04/install/state_estimation/share/ament_index/resource_index/package_run_dependencies/state_estimation
+/media/sf_CRATER/Simulation02.04/install/state_estimation/share/ament_index/resource_index/parent_prefix_path/state_estimation
+/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/environment/ament_prefix_path.sh
+/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/environment/ament_prefix_path.dsv
+/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/environment/path.sh
+/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/environment/path.dsv
+/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/local_setup.bash
+/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/local_setup.sh
+/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/local_setup.zsh
+/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/local_setup.dsv
+/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/package.dsv
+/media/sf_CRATER/Simulation02.04/install/state_estimation/share/ament_index/resource_index/packages/state_estimation
+/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/cmake/state_estimationConfig.cmake
+/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/cmake/state_estimationConfig-version.cmake
+/media/sf_CRATER/Simulation02.04/install/state_estimation/share/state_estimation/package.xml

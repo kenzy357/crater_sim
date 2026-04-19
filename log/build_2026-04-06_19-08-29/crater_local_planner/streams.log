@@ -1,0 +1,60 @@
+[0.668s] Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_local_planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /media/sf_CRATER/Simulation02.04/autonomous-controls/src/local_planner -DCMAKE_INSTALL_PREFIX=/media/sf_CRATER/Simulation02.04/install/crater_local_planner
+[1.838s] -- The C compiler identification is GNU 11.4.0
+[3.116s] -- The CXX compiler identification is GNU 11.4.0
+[3.164s] -- Detecting C compiler ABI info
+[5.522s] -- Detecting C compiler ABI info - done
+[5.801s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.825s] -- Detecting C compile features
+[5.834s] -- Detecting C compile features - done
+[5.916s] -- Detecting CXX compiler ABI info
+[7.542s] -- Detecting CXX compiler ABI info - done
+[7.638s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[7.646s] -- Detecting CXX compile features
+[7.656s] -- Detecting CXX compile features - done
+[7.716s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[8.468s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[8.953s] -- Found xacro: 2.1.1 (/opt/ros/humble/share/xacro/cmake)
+[8.992s] -- Found rclpy: 3.3.21 (/opt/ros/humble/share/rclpy/cmake)
+[9.003s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[9.694s] -- Added test 'copyright' to check source files copyright and LICENSE
+[10.234s] -- Added test 'flake8' to check Python code syntax and style conventions
+[10.339s] -- Added test 'lint_cmake' to check CMake code style
+[10.364s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[11.532s] -- Added test 'xmllint' to check XML markup files
+[11.977s] -- Configuring done
+[12.875s] -- Generating done
+[13.206s] -- Build files have been written to: /media/sf_CRATER/Simulation02.04/build/crater_local_planner
+[13.342s] Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_local_planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /media/sf_CRATER/Simulation02.04/autonomous-controls/src/local_planner -DCMAKE_INSTALL_PREFIX=/media/sf_CRATER/Simulation02.04/install/crater_local_planner
+[13.451s] Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_local_planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/crater_local_planner -- -j16 -l16
+[13.627s] gmake: Warning: File 'Makefile' has modification time 0.87 s in the future
+[13.944s] gmake[1]: Warning: File 'CMakeFiles/Makefile2' has modification time 0.84 s in the future
+[13.991s] gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+[14.066s] gmake: warning:  Clock skew detected.  Your build may be incomplete.
+[14.071s] Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_local_planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/crater_local_planner -- -j16 -l16
+[14.104s] Invoking command in '/media/sf_CRATER/Simulation02.04/build/crater_local_planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/crater_local_planner
+[14.130s] -- Install configuration: ""
+[14.134s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/scripts
+[14.172s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/scripts/global_path_bridge.py
+[14.213s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/scripts/__init__.py
+[14.250s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/launch
+[14.258s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/launch/complete_navigation.launch.py
+[14.343s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/launch/display.launch.py
+[14.420s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/config
+[14.422s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/config/nav2_params.yaml
+[14.462s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/lib/crater_local_planner/global_path_bridge
+[14.527s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/ament_index/resource_index/package_run_dependencies/crater_local_planner
+[14.548s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/ament_index/resource_index/parent_prefix_path/crater_local_planner
+[14.585s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/environment/ament_prefix_path.sh
+[14.608s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/environment/ament_prefix_path.dsv
+[14.621s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/environment/path.sh
+[14.638s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/environment/path.dsv
+[14.680s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/local_setup.bash
+[14.694s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/local_setup.sh
+[14.705s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/local_setup.zsh
+[14.802s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/local_setup.dsv
+[14.831s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/package.dsv
+[15.007s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/ament_index/resource_index/packages/crater_local_planner
+[15.026s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/cmake/crater_local_plannerConfig.cmake
+[15.060s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/cmake/crater_local_plannerConfig-version.cmake
+[15.089s] -- Installing: /media/sf_CRATER/Simulation02.04/install/crater_local_planner/share/crater_local_planner/package.xml
+[15.546s] Invoked command in '/media/sf_CRATER/Simulation02.04/build/crater_local_planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/crater_local_planner

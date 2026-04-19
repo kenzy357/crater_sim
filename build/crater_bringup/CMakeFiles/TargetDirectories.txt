@@ -1,0 +1,9 @@
+/media/sf_CRATER/Simulation02.04/build/crater_bringup/CMakeFiles/uninstall.dir
+/media/sf_CRATER/Simulation02.04/build/crater_bringup/CMakeFiles/crater_bringup_uninstall.dir
+/media/sf_CRATER/Simulation02.04/build/crater_bringup/CMakeFiles/test.dir
+/media/sf_CRATER/Simulation02.04/build/crater_bringup/CMakeFiles/edit_cache.dir
+/media/sf_CRATER/Simulation02.04/build/crater_bringup/CMakeFiles/rebuild_cache.dir
+/media/sf_CRATER/Simulation02.04/build/crater_bringup/CMakeFiles/list_install_components.dir
+/media/sf_CRATER/Simulation02.04/build/crater_bringup/CMakeFiles/install.dir
+/media/sf_CRATER/Simulation02.04/build/crater_bringup/CMakeFiles/install/local.dir
+/media/sf_CRATER/Simulation02.04/build/crater_bringup/CMakeFiles/install/strip.dir

@@ -1,0 +1,20 @@
+[0.616s] Invoking command in '/media/sf_CRATER/Simulation02.04/build/global-planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/global-planner -- -j16 -l16
+[1.078s] Invoked command in '/media/sf_CRATER/Simulation02.04/build/global-planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/global-planner -- -j16 -l16
+[1.090s] Invoking command in '/media/sf_CRATER/Simulation02.04/build/global-planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/global-planner
+[1.193s] -- Install configuration: ""
+[1.193s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/global-planner/share/ament_index/resource_index/package_run_dependencies/global-planner
+[1.194s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/global-planner/share/ament_index/resource_index/parent_prefix_path/global-planner
+[1.195s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/environment/ament_prefix_path.sh
+[1.196s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/environment/ament_prefix_path.dsv
+[1.198s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/environment/path.sh
+[1.200s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/environment/path.dsv
+[1.201s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/local_setup.bash
+[1.203s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/local_setup.sh
+[1.205s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/local_setup.zsh
+[1.206s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/local_setup.dsv
+[1.207s] -- Installing: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/package.dsv
+[1.208s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/global-planner/share/ament_index/resource_index/packages/global-planner
+[1.209s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/cmake/global-plannerConfig.cmake
+[1.210s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/cmake/global-plannerConfig-version.cmake
+[1.211s] -- Up-to-date: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/package.xml
+[1.651s] Invoked command in '/media/sf_CRATER/Simulation02.04/build/global-planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/sf_CRATER/Simulation02.04/install/crater_aruco:/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/global-planner

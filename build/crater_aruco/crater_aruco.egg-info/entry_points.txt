@@ -1,0 +1,3 @@
+[console_scripts]
+aruco_node = crater_aruco.aruco_node:main
+

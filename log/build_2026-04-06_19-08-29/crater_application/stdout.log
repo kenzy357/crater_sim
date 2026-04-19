@@ -1,0 +1,39 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /media/sf_CRATER/Simulation02.04/build/crater_application
+-- Install configuration: ""
+-- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/lib/crater_application/path_from_csv_node.py
+-- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/lib/crater_application/path_follower_node.py
+-- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/lib/crater_application/twist_to_wheels_node.py
+-- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/lib/crater_application/wheels_cmd_demux_node.py
+-- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/config
+-- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/config/global_path_world.csv
+-- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/share/ament_index/resource_index/package_run_dependencies/crater_application
+-- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/share/ament_index/resource_index/parent_prefix_path/crater_application
+-- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/environment/ament_prefix_path.sh
+-- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/environment/ament_prefix_path.dsv
+-- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/environment/path.sh
+-- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/environment/path.dsv
+-- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/local_setup.bash
+-- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/local_setup.sh
+-- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/local_setup.zsh
+-- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/local_setup.dsv
+-- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/package.dsv
+-- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/share/ament_index/resource_index/packages/crater_application
+-- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/cmake/crater_applicationConfig.cmake
+-- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/cmake/crater_applicationConfig-version.cmake
+-- Installing: /media/sf_CRATER/Simulation02.04/install/crater_application/share/crater_application/package.xml

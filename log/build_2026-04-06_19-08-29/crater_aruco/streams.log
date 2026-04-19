@@ -1,0 +1,41 @@
+[3.076s] Invoking command in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_aruco': PYTHONPATH=/media/sf_CRATER/Simulation02.04/build/crater_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/sf_CRATER/Simulation02.04/install/crater_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/crater_aruco build --build-base /media/sf_CRATER/Simulation02.04/build/crater_aruco/build install --record /media/sf_CRATER/Simulation02.04/build/crater_aruco/install.log --single-version-externally-managed install_data
+[3.818s] running egg_info
+[3.834s] creating ../../../build/crater_aruco/crater_aruco.egg-info
+[3.846s] writing ../../../build/crater_aruco/crater_aruco.egg-info/PKG-INFO
+[3.870s] writing dependency_links to ../../../build/crater_aruco/crater_aruco.egg-info/dependency_links.txt
+[3.898s] writing entry points to ../../../build/crater_aruco/crater_aruco.egg-info/entry_points.txt
+[3.930s] writing requirements to ../../../build/crater_aruco/crater_aruco.egg-info/requires.txt
+[3.948s] writing top-level names to ../../../build/crater_aruco/crater_aruco.egg-info/top_level.txt
+[3.975s] writing manifest file '../../../build/crater_aruco/crater_aruco.egg-info/SOURCES.txt'
+[4.096s] reading manifest file '../../../build/crater_aruco/crater_aruco.egg-info/SOURCES.txt'
+[4.136s] writing manifest file '../../../build/crater_aruco/crater_aruco.egg-info/SOURCES.txt'
+[4.140s] running build
+[4.144s] running build_py
+[4.146s] creating /media/sf_CRATER/Simulation02.04/build/crater_aruco/build
+[4.214s] creating /media/sf_CRATER/Simulation02.04/build/crater_aruco/build/lib
+[4.260s] creating /media/sf_CRATER/Simulation02.04/build/crater_aruco/build/lib/crater_aruco
+[4.314s] copying crater_aruco/aruco_node.py -> /media/sf_CRATER/Simulation02.04/build/crater_aruco/build/lib/crater_aruco
+[4.401s] copying crater_aruco/__init__.py -> /media/sf_CRATER/Simulation02.04/build/crater_aruco/build/lib/crater_aruco
+[4.443s] running install
+[4.475s] running install_lib
+[4.504s] creating /media/sf_CRATER/Simulation02.04/install/crater_aruco/lib/python3.10/site-packages/crater_aruco
+[4.549s] copying /media/sf_CRATER/Simulation02.04/build/crater_aruco/build/lib/crater_aruco/aruco_node.py -> /media/sf_CRATER/Simulation02.04/install/crater_aruco/lib/python3.10/site-packages/crater_aruco
+[4.654s] copying /media/sf_CRATER/Simulation02.04/build/crater_aruco/build/lib/crater_aruco/__init__.py -> /media/sf_CRATER/Simulation02.04/install/crater_aruco/lib/python3.10/site-packages/crater_aruco
+[4.807s] byte-compiling /media/sf_CRATER/Simulation02.04/install/crater_aruco/lib/python3.10/site-packages/crater_aruco/aruco_node.py to aruco_node.cpython-310.pyc
+[4.885s] byte-compiling /media/sf_CRATER/Simulation02.04/install/crater_aruco/lib/python3.10/site-packages/crater_aruco/__init__.py to __init__.cpython-310.pyc
+[4.946s] running install_data
+[4.982s] creating /media/sf_CRATER/Simulation02.04/install/crater_aruco/share/ament_index
+[5.015s] creating /media/sf_CRATER/Simulation02.04/install/crater_aruco/share/ament_index/resource_index
+[5.022s] creating /media/sf_CRATER/Simulation02.04/install/crater_aruco/share/ament_index/resource_index/packages
+[5.038s] copying resource/crater_aruco -> /media/sf_CRATER/Simulation02.04/install/crater_aruco/share/ament_index/resource_index/packages
+[5.058s] copying package.xml -> /media/sf_CRATER/Simulation02.04/install/crater_aruco/share/crater_aruco
+[5.075s] creating /media/sf_CRATER/Simulation02.04/install/crater_aruco/share/crater_aruco/launch
+[5.085s] copying launch/aruco_with_camera.launch.py -> /media/sf_CRATER/Simulation02.04/install/crater_aruco/share/crater_aruco/launch
+[5.112s] creating /media/sf_CRATER/Simulation02.04/install/crater_aruco/share/crater_aruco/config
+[5.122s] copying config/rgbd.yaml -> /media/sf_CRATER/Simulation02.04/install/crater_aruco/share/crater_aruco/config
+[5.146s] running install_egg_info
+[5.160s] Copying ../../../build/crater_aruco/crater_aruco.egg-info to /media/sf_CRATER/Simulation02.04/install/crater_aruco/lib/python3.10/site-packages/crater_aruco-0.0.0-py3.10.egg-info
+[5.476s] running install_scripts
+[5.590s] Installing aruco_node script to /media/sf_CRATER/Simulation02.04/install/crater_aruco/lib/crater_aruco
+[5.746s] writing list of installed files to '/media/sf_CRATER/Simulation02.04/build/crater_aruco/install.log'
+[5.875s] Invoked command in '/media/sf_CRATER/Simulation02.04/autonomous-controls/src/crater_aruco' returned '0': PYTHONPATH=/media/sf_CRATER/Simulation02.04/build/crater_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/sf_CRATER/Simulation02.04/install/crater_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/crater_aruco build --build-base /media/sf_CRATER/Simulation02.04/build/crater_aruco/build install --record /media/sf_CRATER/Simulation02.04/build/crater_aruco/install.log --single-version-externally-managed install_data

@@ -1,0 +1,39 @@
+running egg_info
+creating ../../../build/crater_aruco/crater_aruco.egg-info
+writing ../../../build/crater_aruco/crater_aruco.egg-info/PKG-INFO
+writing dependency_links to ../../../build/crater_aruco/crater_aruco.egg-info/dependency_links.txt
+writing entry points to ../../../build/crater_aruco/crater_aruco.egg-info/entry_points.txt
+writing requirements to ../../../build/crater_aruco/crater_aruco.egg-info/requires.txt
+writing top-level names to ../../../build/crater_aruco/crater_aruco.egg-info/top_level.txt
+writing manifest file '../../../build/crater_aruco/crater_aruco.egg-info/SOURCES.txt'
+reading manifest file '../../../build/crater_aruco/crater_aruco.egg-info/SOURCES.txt'
+writing manifest file '../../../build/crater_aruco/crater_aruco.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /media/sf_CRATER/Simulation02.04/build/crater_aruco/build
+creating /media/sf_CRATER/Simulation02.04/build/crater_aruco/build/lib
+creating /media/sf_CRATER/Simulation02.04/build/crater_aruco/build/lib/crater_aruco
+copying crater_aruco/aruco_node.py -> /media/sf_CRATER/Simulation02.04/build/crater_aruco/build/lib/crater_aruco
+copying crater_aruco/__init__.py -> /media/sf_CRATER/Simulation02.04/build/crater_aruco/build/lib/crater_aruco
+running install
+running install_lib
+creating /media/sf_CRATER/Simulation02.04/install/crater_aruco/lib/python3.10/site-packages/crater_aruco
+copying /media/sf_CRATER/Simulation02.04/build/crater_aruco/build/lib/crater_aruco/aruco_node.py -> /media/sf_CRATER/Simulation02.04/install/crater_aruco/lib/python3.10/site-packages/crater_aruco
+copying /media/sf_CRATER/Simulation02.04/build/crater_aruco/build/lib/crater_aruco/__init__.py -> /media/sf_CRATER/Simulation02.04/install/crater_aruco/lib/python3.10/site-packages/crater_aruco
+byte-compiling /media/sf_CRATER/Simulation02.04/install/crater_aruco/lib/python3.10/site-packages/crater_aruco/aruco_node.py to aruco_node.cpython-310.pyc
+byte-compiling /media/sf_CRATER/Simulation02.04/install/crater_aruco/lib/python3.10/site-packages/crater_aruco/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /media/sf_CRATER/Simulation02.04/install/crater_aruco/share/ament_index
+creating /media/sf_CRATER/Simulation02.04/install/crater_aruco/share/ament_index/resource_index
+creating /media/sf_CRATER/Simulation02.04/install/crater_aruco/share/ament_index/resource_index/packages
+copying resource/crater_aruco -> /media/sf_CRATER/Simulation02.04/install/crater_aruco/share/ament_index/resource_index/packages
+copying package.xml -> /media/sf_CRATER/Simulation02.04/install/crater_aruco/share/crater_aruco
+creating /media/sf_CRATER/Simulation02.04/install/crater_aruco/share/crater_aruco/launch
+copying launch/aruco_with_camera.launch.py -> /media/sf_CRATER/Simulation02.04/install/crater_aruco/share/crater_aruco/launch
+creating /media/sf_CRATER/Simulation02.04/install/crater_aruco/share/crater_aruco/config
+copying config/rgbd.yaml -> /media/sf_CRATER/Simulation02.04/install/crater_aruco/share/crater_aruco/config
+running install_egg_info
+Copying ../../../build/crater_aruco/crater_aruco.egg-info to /media/sf_CRATER/Simulation02.04/install/crater_aruco/lib/python3.10/site-packages/crater_aruco-0.0.0-py3.10.egg-info
+running install_scripts
+Installing aruco_node script to /media/sf_CRATER/Simulation02.04/install/crater_aruco/lib/crater_aruco
+writing list of installed files to '/media/sf_CRATER/Simulation02.04/build/crater_aruco/install.log'

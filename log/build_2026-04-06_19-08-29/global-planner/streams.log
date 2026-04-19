@@ -1,0 +1,65 @@
+[0.719s] Invoking command in '/media/sf_CRATER/Simulation02.04/build/global-planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /media/sf_CRATER/Simulation02.04/autonomous-controls/src/global_planner -DCMAKE_INSTALL_PREFIX=/media/sf_CRATER/Simulation02.04/install/global-planner
+[1.921s] -- The C compiler identification is GNU 11.4.0
+[3.049s] -- The CXX compiler identification is GNU 11.4.0
+[3.174s] -- Detecting C compiler ABI info
+[5.449s] -- Detecting C compiler ABI info - done
+[5.566s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.579s] -- Detecting C compile features
+[5.594s] -- Detecting C compile features - done
+[5.851s] -- Detecting CXX compiler ABI info
+[7.670s] -- Detecting CXX compiler ABI info - done
+[7.706s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[7.706s] -- Detecting CXX compile features
+[7.707s] -- Detecting CXX compile features - done
+[7.716s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[8.361s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[8.973s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[9.204s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[9.359s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[9.453s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[9.574s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.633s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.973s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[10.029s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[11.269s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[11.469s] -- Found FastRTPS: /opt/ros/humble/include  
+[11.733s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[11.928s] -- Looking for pthread.h
+[14.114s] -- Looking for pthread.h - found
+[14.132s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[15.117s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[15.120s] -- Found Threads: TRUE  
+[15.334s] -- Found rclpy: 3.3.21 (/opt/ros/humble/share/rclpy/cmake)
+[15.346s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[15.899s] -- Added test 'flake8' to check Python code syntax and style conventions
+[15.938s] -- Added test 'lint_cmake' to check CMake code style
+[15.953s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[16.049s] -- Added test 'xmllint' to check XML markup files
+[16.111s] -- Configuring done
+[16.415s] -- Generating done
+[16.552s] -- Build files have been written to: /media/sf_CRATER/Simulation02.04/build/global-planner
+[16.566s] Invoked command in '/media/sf_CRATER/Simulation02.04/build/global-planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /media/sf_CRATER/Simulation02.04/autonomous-controls/src/global_planner -DCMAKE_INSTALL_PREFIX=/media/sf_CRATER/Simulation02.04/install/global-planner
+[16.608s] Invoking command in '/media/sf_CRATER/Simulation02.04/build/global-planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/global-planner -- -j16 -l16
+[16.623s] gmake: Warning: File 'Makefile' has modification time 1.5 s in the future
+[16.697s] gmake[1]: Warning: File 'CMakeFiles/Makefile2' has modification time 1.5 s in the future
+[16.715s] gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+[16.776s] gmake: warning:  Clock skew detected.  Your build may be incomplete.
+[16.785s] Invoked command in '/media/sf_CRATER/Simulation02.04/build/global-planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /media/sf_CRATER/Simulation02.04/build/global-planner -- -j16 -l16
+[16.805s] Invoking command in '/media/sf_CRATER/Simulation02.04/build/global-planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/global-planner
+[16.827s] -- Install configuration: ""
+[16.836s] -- Installing: /media/sf_CRATER/Simulation02.04/install/global-planner/share/ament_index/resource_index/package_run_dependencies/global-planner
+[16.856s] -- Installing: /media/sf_CRATER/Simulation02.04/install/global-planner/share/ament_index/resource_index/parent_prefix_path/global-planner
+[16.976s] -- Installing: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/environment/ament_prefix_path.sh
+[16.990s] -- Installing: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/environment/ament_prefix_path.dsv
+[17.019s] -- Installing: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/environment/path.sh
+[17.030s] -- Installing: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/environment/path.dsv
+[17.049s] -- Installing: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/local_setup.bash
+[17.062s] -- Installing: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/local_setup.sh
+[17.076s] -- Installing: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/local_setup.zsh
+[17.087s] -- Installing: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/local_setup.dsv
+[17.099s] -- Installing: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/package.dsv
+[17.113s] -- Installing: /media/sf_CRATER/Simulation02.04/install/global-planner/share/ament_index/resource_index/packages/global-planner
+[17.135s] -- Installing: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/cmake/global-plannerConfig.cmake
+[17.165s] -- Installing: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/cmake/global-plannerConfig-version.cmake
+[17.187s] -- Installing: /media/sf_CRATER/Simulation02.04/install/global-planner/share/global-planner/package.xml
+[17.215s] Invoked command in '/media/sf_CRATER/Simulation02.04/build/global-planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /media/sf_CRATER/Simulation02.04/build/global-planner
