@@ -1,0 +1,30 @@
+{
+    "planning": {
+        "resolution": 0.1,
+        "slope_threshold": 20.0,
+        "dilation_radius": 1,
+        "path_lift": 0.45,
+        "surf_step": 3
+    },
+    "coordinates": {
+        "base_s4": [18.6625, 10.8159],
+        "all_waypoints": [
+            [15.1159, -3.0854],
+            [6.8073, 10.3746],
+            [12.3282, 6.7797],
+            [19.7272, 5.2386],
+            [25.2349, 2.0235],
+            [10.0126, 0.0000],
+            [20.1270, 0.0000],
+            [24.4818, 7.9578],
+            [17.9612, 2.8924]
+        ],
+        "selected_indices": [0, 1, 4, 5],
+        "flip_y": true,
+        "flip_z": true
+    },
+    "paths": {
+        "points_csv": "media/marsyard_raw_points.csv",
+        "output_dir": "out"
+    }
+}

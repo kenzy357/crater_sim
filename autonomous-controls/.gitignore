@@ -1,0 +1,14 @@
+**/build/
+**/install/
+**/log/
+**/compile_commands.json
+**/__pycache__/
+**/*.pyc
+**/.vscode/
+**/.DS_Store
+**/.venv/
+
+.DS_Store
+
+# Keep DepthAI ROS in local workspace only
+Localization/src/depthai-ros/

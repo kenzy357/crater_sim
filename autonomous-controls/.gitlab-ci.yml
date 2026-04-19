@@ -1,0 +1,11 @@
+stages:
+  - build
+
+build:
+  stage: build
+  image: ros:humble
+  script:
+    - apt-get update && rosdep update
+    - rosdep install --from-paths src --ignore-src -r -y
+    - source /opt/ros/humble/setup.bash
+    - catkin build --workspace src

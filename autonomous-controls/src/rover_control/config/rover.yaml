@@ -1,0 +1,60 @@
+# ─── Rover 4WS — ROS2 parameter file ─────────────────────────────────────────
+# Load with: ros2 launch rover_control rover.launch.py
+# Or pass directly: ros2 run rover_control gamepad_node --ros-args --params-file config/rover.yaml
+
+gamepad_node:
+  ros__parameters:
+
+    # Joystick device — two ways to specify it (only one is used at a time):
+    #
+    # Option A — by NAME (more reliable, works with DualSense):
+    #joy_device_name: 'Microsoft X-Box 360 pad'
+    #
+    # Option B — by ID:
+    #   joy_device_id: 0
+    #
+    # Option C — by full path (use this on VM with Xbox controller):
+    joy_device: '/dev/input/js2'
+
+    # Input topic (published by: ros2 run joy joy_node)
+    joy_topic: "/joy"
+
+    # Output topic
+    cmd_vel_topic: "/cmd_vel"
+
+    # Axis indices — run your joystick test to find yours:
+    #   move each stick and note which axis= number changes
+    axis_lx: 0        # left  stick X → strafe  (vy, sideways)
+    axis_ly: 1        # left  stick Y → forward  (vx, forward/back)
+    axis_rx: 3 #2        # right stick X → rotation (omega)
+
+    # Deadzone: normalised [0.0, 1.0]
+    # joy_node already applies a hardware deadzone; this is a software one on top
+    deadzone: 0.08
+
+    # Maximum velocities
+    vmax: 2.0         # max linear  velocity [m/s]
+    wmax: 0.5         # max angular velocity [rad/s]
+
+    # Invert axes if your stick directions feel wrong (true = invert)
+    invert_ly: false   # SDL convention: push forward = negative, so invert
+    invert_rx: true   # right stick right = clockwise = negative omega
+
+kinematics_node:
+  ros__parameters:
+
+    # Input / output topics
+    cmd_vel_topic:      "/cmd_vel"
+    wheel_cmd_topic:    "/wheel_commands"
+
+    # Rover geometry
+    L: 1.5             # wheelbase    (front-to-back)  [m]
+    W: 1.0             # track width  (left-to-right)  [m]
+    R: 0.15            # wheel radius                  [m]
+
+    # Minimum wheel contact speed to compute a new steering angle [m/s]
+    # Below this the previous steering angle is held (prevents jitter at stop)
+    speed_threshold: 0.05
+
+    # Publish rate [Hz]
+    publish_rate: 100.0
