@@ -38,7 +38,7 @@ gamepad_node:
 
     # Invert axes if your stick directions feel wrong (true = invert)
     invert_ly: false   # SDL convention: push forward = negative, so invert
-    invert_rx: true   # right stick right = clockwise = negative omega
+    invert_rx: false # right stick right = clockwise = negative omega
 
 kinematics_node:
   ros__parameters:
@@ -48,9 +48,9 @@ kinematics_node:
     wheel_cmd_topic:    "/wheel_commands"
 
     # Rover geometry
-    L: 1.5             # wheelbase    (front-to-back)  [m]
-    W: 1.0             # track width  (left-to-right)  [m]
-    R: 0.15            # wheel radius                  [m]
+    L: 0.924             # wheelbase    (front-to-back)  [m]
+    W: 0.372             # track width  (left-to-right)  [m]
+    R: 0.156            # wheel radius                  [m]
 
     # Minimum wheel contact speed to compute a new steering angle [m/s]
     # Below this the previous steering angle is held (prevents jitter at stop)
