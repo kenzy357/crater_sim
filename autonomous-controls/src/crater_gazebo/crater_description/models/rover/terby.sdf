@@ -70,6 +70,7 @@
                 </geometry>
             </visual>
         </link>
+
         <link name="rocker_right">
             <pose>0 -0.38 0 0 0 0</pose>
             <inertial>
@@ -198,6 +199,7 @@
                 </geometry>
             </visual>
         </link>
+
         <link name="wheel_backleft">
             <pose>-0.48 0.38 -0.29 1.5708 0 0</pose>
             <inertial>
@@ -209,6 +211,7 @@
                 </inertia>
             </inertial>
             <collision name="collision_wbl">
+                .
                 <geometry>
                     <cylinder>
                         <radius>0.16</radius>
@@ -236,6 +239,7 @@
                 </geometry>
             </visual>
         </link>
+
         <link name="wheel_frontright">
             <pose>0.48 -0.38 -0.29 1.5708 0 0</pose>
             <inertial>
@@ -274,6 +278,7 @@
                 </geometry>
             </visual>
         </link>
+
         <link name="wheel_backright">
             <pose>-0.48 -0.38 -0.29 1.5708 0 0</pose>
             <inertial>
@@ -316,7 +321,6 @@
         <joint name="rocker_pivot_left" type="revolute">
             <parent>chassis</parent>
             <child>rocker_left</child>
-
             <pose>0 0 0 0 0 0</pose>
             <axis>
                 <xyz>0 1 0</xyz>
@@ -330,7 +334,6 @@
         <joint name="rocker_pivot_right" type="revolute">
             <parent>chassis</parent>
             <child>rocker_right</child>
-
             <pose>0 0 0 0 0 0</pose>
             <axis>
                 <xyz>0 1 0</xyz>
@@ -344,7 +347,6 @@
         <joint name="steeringjoint_frontleft" type="revolute">
             <parent>rocker_left</parent>
             <child>steering_frontleft</child>
-
             <pose>0 0 0 0 0 0</pose>
             <axis>
                 <xyz>0 0 1</xyz>
@@ -359,7 +361,6 @@
         <joint name="steeringjoint_backleft" type="revolute">
             <parent>rocker_left</parent>
             <child>steering_backleft</child>
-
             <pose>0 0 0 0 0 0</pose>
             <axis>
                 <xyz>0 0 1</xyz>
@@ -374,7 +375,6 @@
         <joint name="steeringjoint_frontright" type="revolute">
             <parent>rocker_right</parent>
             <child>steering_frontright</child>
-
             <pose>0 0 0 0 0 0</pose>
             <axis>
                 <xyz>0 0 1</xyz>
@@ -389,7 +389,6 @@
         <joint name="steeringjoint_backright" type="revolute">
             <parent>rocker_right</parent>
             <child>steering_backright</child>
-
             <pose>0 0 0 0 0 0</pose>
             <axis>
                 <xyz>0 0 1</xyz>
@@ -404,52 +403,48 @@
         <joint name="wheeljoint_frontleft" type="revolute">
             <parent>steering_frontleft</parent>
             <child>wheel_frontleft</child>
-
             <pose>0 0 0 0 0 0</pose>
             <axis>
-                <limit>
-                    <effort>0 0 100</effort>
-                </limit>
                 <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>100</effort>
+                </limit>
             </axis>
         </joint>
 
         <joint name="wheeljoint_backleft" type="revolute">
             <parent>steering_backleft</parent>
             <child>wheel_backleft</child>
-
             <pose>0 0 0 0 0 0</pose>
             <axis>
-                <limit>
-                    <effort>0 0 100</effort>
-                </limit>
                 <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>100</effort>
+                </limit>
             </axis>
         </joint>
 
         <joint name="wheeljoint_frontright" type="revolute">
             <parent>steering_frontright</parent>
             <child>wheel_frontright</child>
-
             <pose>0 0 0 0 0 0</pose>
             <axis>
-                <limit>
-                    <effort>0 0 100</effort>
-                </limit>
                 <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>100</effort>
+                </limit>
             </axis>
         </joint>
 
         <joint name="wheeljoint_backright" type="revolute">
             <parent>steering_backright</parent>
             <child>wheel_backright</child>
-
             <pose>0 0 0 0 0 0</pose>
             <axis>
-                <limit>
-                    <effort>0 0 100</effort>
-                </limit>
                 <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>100</effort>
+                </limit>
             </axis>
         </joint>
 
@@ -457,53 +452,58 @@
             filename="ignition-gazebo-joint-state-publisher-system"
             name="gz::sim::systems::JointStatePublisher">
         </plugin>
-        <plugin
-            filename="ignition-gazebo-joint-controller-system"
-            name="gz::sim::systems::JointController">
+
+        <!-- Steering controllers (position) -->
+        <plugin filename="ignition-gazebo-joint-controller-system"
+                name="gz::sim::systems::JointController">
             <joint_name>steeringjoint_frontleft</joint_name>
             <topic>wheel/frontleft/steering/pos</topic>
         </plugin>
-        <plugin
-            filename="ignition-gazebo-joint-controller-system"
-            name="gz::sim::systems::JointController">
+        <plugin filename="ignition-gazebo-joint-controller-system"
+                name="gz::sim::systems::JointController">
             <joint_name>steeringjoint_backleft</joint_name>
             <topic>wheel/backleft/steering/pos</topic>
         </plugin>
-        <plugin
-            filename="ignition-gazebo-joint-controller-system"
-            name="gz::sim::systems::JointController">
+        <plugin filename="ignition-gazebo-joint-controller-system"
+                name="gz::sim::systems::JointController">
             <joint_name>steeringjoint_frontright</joint_name>
             <topic>wheel/frontright/steering/pos</topic>
         </plugin>
-        <plugin
-            filename="ignition-gazebo-joint-controller-system"
-            name="gz::sim::systems::JointController">
+        <plugin filename="ignition-gazebo-joint-controller-system"
+                name="gz::sim::systems::JointController">
             <joint_name>steeringjoint_backright</joint_name>
             <topic>wheel/backright/steering/pos</topic>
         </plugin>
-        <plugin
-            filename="ignition-gazebo-joint-controller-system"
-            name="gz::sim::systems::JointController">
+
+        <!-- Traction controllers (force-based velocity) -->
+        <plugin filename="ignition-gazebo-joint-controller-system"
+                name="gz::sim::systems::JointController">
             <joint_name>wheeljoint_frontleft</joint_name>
             <topic>wheel/frontleft/traction/vel</topic>
+            <use_force_commands>true</use_force_commands>
+            <p_gain>10</p_gain>
         </plugin>
-        <plugin
-            filename="ignition-gazebo-joint-controller-system"
-            name="gz::sim::systems::JointController">
+        <plugin filename="ignition-gazebo-joint-controller-system"
+                name="gz::sim::systems::JointController">
             <joint_name>wheeljoint_backleft</joint_name>
             <topic>wheel/backleft/traction/vel</topic>
+            <use_force_commands>true</use_force_commands>
+            <p_gain>10</p_gain>
         </plugin>
-        <plugin
-            filename="ignition-gazebo-joint-controller-system"
-            name="gz::sim::systems::JointController">
+        <plugin filename="ignition-gazebo-joint-controller-system"
+                name="gz::sim::systems::JointController">
             <joint_name>wheeljoint_frontright</joint_name>
             <topic>wheel/frontright/traction/vel</topic>
+            <use_force_commands>true</use_force_commands>
+            <p_gain>10</p_gain>
         </plugin>
-        <plugin
-            filename="ignition-gazebo-joint-controller-system"
-            name="gz::sim::systems::JointController">
+        <plugin filename="ignition-gazebo-joint-controller-system"
+                name="gz::sim::systems::JointController">
             <joint_name>wheeljoint_backright</joint_name>
             <topic>wheel/backright/traction/vel</topic>
+            <use_force_commands>true</use_force_commands>
+            <p_gain>10</p_gain>
         </plugin>
+
     </model>
 </sdf>
