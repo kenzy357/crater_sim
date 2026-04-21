@@ -1,64 +1,72 @@
 <?xml version="1.0"?>
-<sdf version='1.7'>
+<sdf version='1.8'>
   <model name='terby'>
 
     <!-- ================================================================
-         PHYSICAL MODEL: rs_robot scaled x6
-         Raw chassis: 0.094 x 0.182 x 0.036m  -> scaled: 0.564 x 1.092 x 0.216m
-         Raw wheel:   radius=0.026 width=0.018m -> scaled: radius=0.156 width=0.108m
-         Raw joint poses scaled x6 throughout
-         Collision: primitives (box/cylinder) for reliable physics
-         Visual: meshes with scale 6 6 6
+         REAL ROVER DIMENSIONS - X/Y swapped so:
+           X = forward/backward = wheelbase = 0.614 m
+           Y = left/right       = track width = 1.135 m
+
+         Wheel positions in base_link frame:
+           FL: x=+0.307  y=+0.5675  z=-0.31
+           FR: x=+0.307  y=-0.5675  z=-0.31
+           RL: x=-0.307  y=+0.5675  z=-0.31
+           RR: x=-0.307  y=-0.5675  z=-0.31
+
+         Chassis: 0.614 x 1.135 x 0.10 m  (length x width x height)
+         Front bumper: red box at x=+0.35 (past front wheel line)
     ================================================================ -->
 
+    <!-- CHASSIS -->
     <link name='base_link'>
       <inertial>
-        <pose>-0.018858 0 0.132 0 0 0</pose>
-        <mass>1.4</mass>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.784</mass>
         <inertia>
-          <ixx>0.0004846</ixx>
+          <ixx>0.00212</ixx>
           <ixy>0</ixy>
-          <ixz>0.000132</ixz>
-          <iyy>0.000352971</iyy>
+          <ixz>0</ixz>
+          <iyy>0.00115</iyy>
           <iyz>0</iyz>
-          <izz>0.000339571</izz>
+          <izz>0.00149</izz>
         </inertia>
       </inertial>
       <collision name='base_link_collision'>
-        <pose>0 0 0 0 0 0</pose>
         <geometry>
           <box>
-            <size>0.564 1.092 0.216</size>
+            <size>0.614 1.135 0.10</size>
           </box>
         </geometry>
         <surface>
           <contact><ode/></contact>
           <friction>
-            <ode>
-              <mu>0.05</mu>
-              <mu2>0.05</mu2>
-            </ode>
+            <ode><mu>0.05</mu><mu2>0.05</mu2></ode>
           </friction>
         </surface>
       </collision>
       <visual name='base_link_visual'>
-        <pose>0 0 0 0 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>6 6 6</scale>
-            <uri>file:///home/kenzy/crater_sim/autonomous-controls/src/crater_gazebo/crater_description/models/rover/meshes/DAE/base/base_link.dae</uri>
-          </mesh>
+          <box>
+            <size>0.614 1.135 0.10</size>
+          </box>
+        </geometry>
+      </visual>
+      <!-- Front bumper: marks +X (forward) direction -->
+      <visual name='front_bumper_visual'>
+        <pose>0.347 0 0.06 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.04 1.135 0.08</size>
+          </box>
         </geometry>
       </visual>
     </link>
 
     <!-- ================================================================
          FRONT LEFT
-         Raw steering pose: 0.077 0.031 -0.004  -> scaled: 0.462 0.186 -0.024
-         Raw wheel offset:  0 0.021 -0.025       -> scaled: 0 0.126 -0.150
     ================================================================ -->
     <joint name='steeringjoint_frontleft' type='revolute'>
-      <pose relative_to='base_link'>0.462 0.186 -0.024 0 0 0</pose>
+      <pose relative_to='base_link'>0.307 0.5675 0 0 0 0</pose>
       <parent>base_link</parent>
       <child>fl_steering_link</child>
       <axis>
@@ -66,130 +74,112 @@
         <limit>
           <lower>-2.1</lower>
           <upper>2.1</upper>
-          <effort>5</effort>
+          <effort>50</effort>
           <velocity>6.28</velocity>
         </limit>
         <dynamics>
-          <damping>0.005</damping>
-          <friction>0.02</friction>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
+          <damping>0.05</damping>
+          <friction>0.1</friction>
         </dynamics>
       </axis>
     </joint>
     <link name='fl_steering_link'>
       <pose relative_to='steeringjoint_frontleft'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 0 -0.12 0 0 0</pose>
-        <mass>0.15</mass>
+        <pose>0 0 -0.155 0 0 0</pose>
+        <mass>0.306</mass>
         <inertia>
-          <ixx>1e-05</ixx>
+          <ixx>0.00037</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>1e-05</iyy>
+          <iyy>0.00022</iyy>
           <iyz>0</iyz>
-          <izz>4e-06</izz>
+          <izz>0.00046</izz>
         </inertia>
       </inertial>
-      <collision name='fl_steering_link_collision'>
-        <pose>0 0 -0.12 0 0 0</pose>
+      <collision name='fl_steering_collision'>
+        <pose>0 0 -0.155 0 0 0</pose>
         <geometry>
-          <box>
-            <size>0.05 0.05 0.2</size>
-          </box>
+          <cylinder>
+            <radius>0.02</radius>
+            <length>0.31</length>
+          </cylinder>
         </geometry>
         <surface>
           <contact><ode/></contact>
-          <friction>
-            <ode>
-              <mu>0.05</mu>
-              <mu2>0.05</mu2>
-            </ode>
-          </friction>
+          <friction><ode><mu>0.05</mu><mu2>0.05</mu2></ode></friction>
         </surface>
       </collision>
-      <visual name='fl_steering_link_visual'>
-        <pose>0 0 0 0 0 0</pose>
+      <visual name='fl_steering_visual'>
+        <pose>0 0 -0.155 0 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>6 6 6</scale>
-            <uri>file:///home/kenzy/crater_sim/autonomous-controls/src/crater_gazebo/crater_description/models/rover/meshes/DAE/suspension/front_left_link.dae</uri>
-          </mesh>
+          <cylinder>
+            <radius>0.02</radius>
+            <length>0.31</length>
+          </cylinder>
         </geometry>
       </visual>
-      <self_collide>0</self_collide>
     </link>
-
     <joint name='wheeljoint_frontleft' type='revolute'>
-      <pose relative_to='fl_steering_link'>0 0.126 -0.150 0 0 -3.14159</pose>
+      <pose relative_to='fl_steering_link'>0 0 -0.31 0 0 0</pose>
       <parent>fl_steering_link</parent>
       <child>fl_wheel_link</child>
       <axis>
-        <xyz>0 -1 0</xyz>
+        <xyz>0 1 0</xyz>
         <limit>
-          <effort>1.5</effort>
+          <effort>15</effort>
           <velocity>20</velocity>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
         </limit>
         <dynamics>
-          <damping>0.005</damping>
-          <friction>0.02</friction>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
+          <damping>0.05</damping>
+          <friction>0.1</friction>
         </dynamics>
       </axis>
     </joint>
     <link name='fl_wheel_link'>
       <pose relative_to='wheeljoint_frontleft'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 -0.042 0 0 0 0</pose>
-        <mass>0.05</mass>
+        <mass>1.107</mass>
         <inertia>
-          <ixx>1e-05</ixx>
+          <ixx>0.01299</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>1.8e-05</iyy>
+          <iyy>0.00731</iyy>
           <iyz>0</iyz>
-          <izz>1e-05</izz>
+          <izz>0.00731</izz>
         </inertia>
       </inertial>
-      <collision name='fl_wheel_link_collision'>
+      <collision name='fl_wheel_collision'>
         <pose>0 0 0 1.5708 0 0</pose>
         <geometry>
           <cylinder>
-            <radius>0.156</radius>
-            <length>0.108</length>
+            <radius>0.162</radius>
+            <length>0.120</length>
           </cylinder>
         </geometry>
         <surface>
-          <friction>
-            <ode>
-              <mu>1.0</mu>
-              <mu2>1.0</mu2>
-            </ode>
-          </friction>
+          <friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction>
           <contact><ode/></contact>
         </surface>
       </collision>
-      <visual name='fl_wheel_link_visual'>
-        <pose>0 0 0 0 0 0</pose>
+      <visual name='fl_wheel_visual'>
+        <pose>0 0 0 1.5708 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>6 6 6</scale>
-            <uri>file:///home/kenzy/crater_sim/autonomous-controls/src/crater_gazebo/crater_description/models/rover/meshes/DAE/wheel/wheel_link.dae</uri>
-          </mesh>
+          <cylinder>
+            <radius>0.162</radius>
+            <length>0.120</length>
+          </cylinder>
         </geometry>
       </visual>
     </link>
 
     <!-- ================================================================
          FRONT RIGHT
-         Raw steering pose: 0.077 -0.031 -0.004  -> scaled: 0.462 -0.186 -0.024
-         Raw wheel offset:  0 -0.021 -0.025       -> scaled: 0 -0.126 -0.150
     ================================================================ -->
     <joint name='steeringjoint_frontright' type='revolute'>
-      <pose relative_to='base_link'>0.462 -0.186 -0.024 0 0 0</pose>
+      <pose relative_to='base_link'>0.307 -0.5675 0 0 0 0</pose>
       <parent>base_link</parent>
       <child>fr_steering_link</child>
       <axis>
@@ -197,130 +187,112 @@
         <limit>
           <lower>-2.1</lower>
           <upper>2.1</upper>
-          <effort>5</effort>
+          <effort>50</effort>
           <velocity>6.28</velocity>
         </limit>
         <dynamics>
-          <damping>0.005</damping>
-          <friction>0.02</friction>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
+          <damping>0.05</damping>
+          <friction>0.1</friction>
         </dynamics>
       </axis>
     </joint>
     <link name='fr_steering_link'>
       <pose relative_to='steeringjoint_frontright'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 0 -0.12 0 0 0</pose>
-        <mass>0.15</mass>
+        <pose>0 0 -0.155 0 0 0</pose>
+        <mass>0.306</mass>
         <inertia>
-          <ixx>1e-05</ixx>
+          <ixx>0.00037</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>1e-05</iyy>
+          <iyy>0.00022</iyy>
           <iyz>0</iyz>
-          <izz>4e-06</izz>
+          <izz>0.00046</izz>
         </inertia>
       </inertial>
-      <collision name='fr_steering_link_collision'>
-        <pose>0 0 -0.12 0 0 0</pose>
+      <collision name='fr_steering_collision'>
+        <pose>0 0 -0.155 0 0 0</pose>
         <geometry>
-          <box>
-            <size>0.05 0.05 0.2</size>
-          </box>
+          <cylinder>
+            <radius>0.02</radius>
+            <length>0.31</length>
+          </cylinder>
         </geometry>
         <surface>
           <contact><ode/></contact>
-          <friction>
-            <ode>
-              <mu>0.05</mu>
-              <mu2>0.05</mu2>
-            </ode>
-          </friction>
+          <friction><ode><mu>0.05</mu><mu2>0.05</mu2></ode></friction>
         </surface>
       </collision>
-      <visual name='fr_steering_link_visual'>
-        <pose>0 0 0 0 0 0</pose>
+      <visual name='fr_steering_visual'>
+        <pose>0 0 -0.155 0 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>6 6 6</scale>
-            <uri>file:///home/kenzy/crater_sim/autonomous-controls/src/crater_gazebo/crater_description/models/rover/meshes/DAE/suspension/front_right_link.dae</uri>
-          </mesh>
+          <cylinder>
+            <radius>0.02</radius>
+            <length>0.31</length>
+          </cylinder>
         </geometry>
       </visual>
-      <self_collide>0</self_collide>
     </link>
-
     <joint name='wheeljoint_frontright' type='revolute'>
-      <pose relative_to='fr_steering_link'>0 -0.126 -0.150 0 0 0</pose>
+      <pose relative_to='fr_steering_link'>0 0 -0.31 0 0 0</pose>
       <parent>fr_steering_link</parent>
       <child>fr_wheel_link</child>
       <axis>
         <xyz>0 1 0</xyz>
         <limit>
-          <effort>1.5</effort>
+          <effort>15</effort>
           <velocity>20</velocity>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
         </limit>
         <dynamics>
-          <damping>0.005</damping>
-          <friction>0.02</friction>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
+          <damping>0.05</damping>
+          <friction>0.1</friction>
         </dynamics>
       </axis>
     </joint>
     <link name='fr_wheel_link'>
       <pose relative_to='wheeljoint_frontright'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 -0.042 0 0 0 0</pose>
-        <mass>0.05</mass>
+        <mass>1.107</mass>
         <inertia>
-          <ixx>1e-05</ixx>
+          <ixx>0.01299</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>1.8e-05</iyy>
+          <iyy>0.00731</iyy>
           <iyz>0</iyz>
-          <izz>1e-05</izz>
+          <izz>0.00731</izz>
         </inertia>
       </inertial>
-      <collision name='fr_wheel_link_collision'>
+      <collision name='fr_wheel_collision'>
         <pose>0 0 0 1.5708 0 0</pose>
         <geometry>
           <cylinder>
-            <radius>0.156</radius>
-            <length>0.108</length>
+            <radius>0.162</radius>
+            <length>0.120</length>
           </cylinder>
         </geometry>
         <surface>
-          <friction>
-            <ode>
-              <mu>1.0</mu>
-              <mu2>1.0</mu2>
-            </ode>
-          </friction>
+          <friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction>
           <contact><ode/></contact>
         </surface>
       </collision>
-      <visual name='fr_wheel_link_visual'>
-        <pose>0 0 0 0 0 0</pose>
+      <visual name='fr_wheel_visual'>
+        <pose>0 0 0 1.5708 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>6 6 6</scale>
-            <uri>file:///home/kenzy/crater_sim/autonomous-controls/src/crater_gazebo/crater_description/models/rover/meshes/DAE/wheel/wheel_link.dae</uri>
-          </mesh>
+          <cylinder>
+            <radius>0.162</radius>
+            <length>0.120</length>
+          </cylinder>
         </geometry>
       </visual>
     </link>
 
     <!-- ================================================================
          REAR LEFT
-         Raw steering pose: -0.077 0.031 -0.004  -> scaled: -0.462 0.186 -0.024
-         Raw wheel offset:  0 0.021 -0.025        -> scaled: 0 0.126 -0.150
     ================================================================ -->
     <joint name='steeringjoint_backleft' type='revolute'>
-      <pose relative_to='base_link'>-0.462 0.186 -0.024 0 0 0</pose>
+      <pose relative_to='base_link'>-0.307 0.5675 0 0 0 0</pose>
       <parent>base_link</parent>
       <child>rl_steering_link</child>
       <axis>
@@ -328,130 +300,112 @@
         <limit>
           <lower>-2.1</lower>
           <upper>2.1</upper>
-          <effort>5</effort>
+          <effort>50</effort>
           <velocity>6.28</velocity>
         </limit>
         <dynamics>
-          <damping>0.005</damping>
-          <friction>0.02</friction>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
+          <damping>0.05</damping>
+          <friction>0.1</friction>
         </dynamics>
       </axis>
     </joint>
     <link name='rl_steering_link'>
       <pose relative_to='steeringjoint_backleft'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 0 -0.12 0 0 0</pose>
-        <mass>0.15</mass>
+        <pose>0 0 -0.155 0 0 0</pose>
+        <mass>0.306</mass>
         <inertia>
-          <ixx>1e-05</ixx>
+          <ixx>0.00037</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>1e-05</iyy>
+          <iyy>0.00022</iyy>
           <iyz>0</iyz>
-          <izz>4e-06</izz>
+          <izz>0.00046</izz>
         </inertia>
       </inertial>
-      <collision name='rl_steering_link_collision'>
-        <pose>0 0 -0.12 0 0 0</pose>
+      <collision name='rl_steering_collision'>
+        <pose>0 0 -0.155 0 0 0</pose>
         <geometry>
-          <box>
-            <size>0.05 0.05 0.2</size>
-          </box>
+          <cylinder>
+            <radius>0.02</radius>
+            <length>0.31</length>
+          </cylinder>
         </geometry>
         <surface>
           <contact><ode/></contact>
-          <friction>
-            <ode>
-              <mu>0.05</mu>
-              <mu2>0.05</mu2>
-            </ode>
-          </friction>
+          <friction><ode><mu>0.05</mu><mu2>0.05</mu2></ode></friction>
         </surface>
       </collision>
-      <visual name='rl_steering_link_visual'>
-        <pose>0 0 0 0 0 0</pose>
+      <visual name='rl_steering_visual'>
+        <pose>0 0 -0.155 0 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>6 6 6</scale>
-            <uri>file:///home/kenzy/crater_sim/autonomous-controls/src/crater_gazebo/crater_description/models/rover/meshes/DAE/suspension/rear_left_link.dae</uri>
-          </mesh>
+          <cylinder>
+            <radius>0.02</radius>
+            <length>0.31</length>
+          </cylinder>
         </geometry>
       </visual>
-      <self_collide>0</self_collide>
     </link>
-
     <joint name='wheeljoint_backleft' type='revolute'>
-      <pose relative_to='rl_steering_link'>0 0.126 -0.150 0 0 -3.14159</pose>
+      <pose relative_to='rl_steering_link'>0 0 -0.31 0 0 0</pose>
       <parent>rl_steering_link</parent>
       <child>rl_wheel_link</child>
       <axis>
-        <xyz>0 -1 0</xyz>
+        <xyz>0 1 0</xyz>
         <limit>
-          <effort>1.5</effort>
+          <effort>15</effort>
           <velocity>20</velocity>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
         </limit>
         <dynamics>
-          <damping>0.005</damping>
-          <friction>0.02</friction>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
+          <damping>0.05</damping>
+          <friction>0.1</friction>
         </dynamics>
       </axis>
     </joint>
     <link name='rl_wheel_link'>
       <pose relative_to='wheeljoint_backleft'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 -0.042 0 0 0 0</pose>
-        <mass>0.05</mass>
+        <mass>1.107</mass>
         <inertia>
-          <ixx>1e-05</ixx>
+          <ixx>0.01299</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>1.8e-05</iyy>
+          <iyy>0.00731</iyy>
           <iyz>0</iyz>
-          <izz>1e-05</izz>
+          <izz>0.00731</izz>
         </inertia>
       </inertial>
-      <collision name='rl_wheel_link_collision'>
+      <collision name='rl_wheel_collision'>
         <pose>0 0 0 1.5708 0 0</pose>
         <geometry>
           <cylinder>
-            <radius>0.156</radius>
-            <length>0.108</length>
+            <radius>0.162</radius>
+            <length>0.120</length>
           </cylinder>
         </geometry>
         <surface>
-          <friction>
-            <ode>
-              <mu>1.0</mu>
-              <mu2>1.0</mu2>
-            </ode>
-          </friction>
+          <friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction>
           <contact><ode/></contact>
         </surface>
       </collision>
-      <visual name='rl_wheel_link_visual'>
-        <pose>0 0 0 0 0 0</pose>
+      <visual name='rl_wheel_visual'>
+        <pose>0 0 0 1.5708 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>6 6 6</scale>
-            <uri>file:///home/kenzy/crater_sim/autonomous-controls/src/crater_gazebo/crater_description/models/rover/meshes/DAE/wheel/wheel_link.dae</uri>
-          </mesh>
+          <cylinder>
+            <radius>0.162</radius>
+            <length>0.120</length>
+          </cylinder>
         </geometry>
       </visual>
     </link>
 
     <!-- ================================================================
          REAR RIGHT
-         Raw steering pose: -0.077 -0.031 -0.004  -> scaled: -0.462 -0.186 -0.024
-         Raw wheel offset:  0 -0.021 -0.025        -> scaled: 0 -0.126 -0.150
     ================================================================ -->
     <joint name='steeringjoint_backright' type='revolute'>
-      <pose relative_to='base_link'>-0.462 -0.186 -0.024 0 0 0</pose>
+      <pose relative_to='base_link'>-0.307 -0.5675 0 0 0 0</pose>
       <parent>base_link</parent>
       <child>rr_steering_link</child>
       <axis>
@@ -459,119 +413,103 @@
         <limit>
           <lower>-2.1</lower>
           <upper>2.1</upper>
-          <effort>5</effort>
+          <effort>50</effort>
           <velocity>6.28</velocity>
         </limit>
         <dynamics>
-          <damping>0.005</damping>
-          <friction>0.02</friction>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
+          <damping>0.05</damping>
+          <friction>0.1</friction>
         </dynamics>
       </axis>
     </joint>
     <link name='rr_steering_link'>
       <pose relative_to='steeringjoint_backright'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 0 -0.12 0 0 0</pose>
-        <mass>0.15</mass>
+        <pose>0 0 -0.155 0 0 0</pose>
+        <mass>0.306</mass>
         <inertia>
-          <ixx>1e-05</ixx>
+          <ixx>0.00037</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>1e-05</iyy>
+          <iyy>0.00022</iyy>
           <iyz>0</iyz>
-          <izz>4e-06</izz>
+          <izz>0.00046</izz>
         </inertia>
       </inertial>
-      <collision name='rr_steering_link_collision'>
-        <pose>0 0 -0.12 0 0 0</pose>
+      <collision name='rr_steering_collision'>
+        <pose>0 0 -0.155 0 0 0</pose>
         <geometry>
-          <box>
-            <size>0.05 0.05 0.2</size>
-          </box>
+          <cylinder>
+            <radius>0.02</radius>
+            <length>0.31</length>
+          </cylinder>
         </geometry>
         <surface>
           <contact><ode/></contact>
-          <friction>
-            <ode>
-              <mu>0.05</mu>
-              <mu2>0.05</mu2>
-            </ode>
-          </friction>
+          <friction><ode><mu>0.05</mu><mu2>0.05</mu2></ode></friction>
         </surface>
       </collision>
-      <visual name='rr_steering_link_visual'>
-        <pose>0 0 0 0 0 0</pose>
+      <visual name='rr_steering_visual'>
+        <pose>0 0 -0.155 0 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>6 6 6</scale>
-            <uri>file:///home/kenzy/crater_sim/autonomous-controls/src/crater_gazebo/crater_description/models/rover/meshes/DAE/suspension/rear_right_link.dae</uri>
-          </mesh>
+          <cylinder>
+            <radius>0.02</radius>
+            <length>0.31</length>
+          </cylinder>
         </geometry>
       </visual>
-      <self_collide>0</self_collide>
     </link>
-
     <joint name='wheeljoint_backright' type='revolute'>
-      <pose relative_to='rr_steering_link'>0 -0.126 -0.150 0 0 0</pose>
+      <pose relative_to='rr_steering_link'>0 0 -0.31 0 0 0</pose>
       <parent>rr_steering_link</parent>
       <child>rr_wheel_link</child>
       <axis>
         <xyz>0 1 0</xyz>
         <limit>
-          <effort>1.5</effort>
+          <effort>15</effort>
           <velocity>20</velocity>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
         </limit>
         <dynamics>
-          <damping>0.005</damping>
-          <friction>0.02</friction>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
+          <damping>0.05</damping>
+          <friction>0.1</friction>
         </dynamics>
       </axis>
     </joint>
     <link name='rr_wheel_link'>
       <pose relative_to='wheeljoint_backright'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 -0.042 0 0 0 0</pose>
-        <mass>0.05</mass>
+        <mass>1.107</mass>
         <inertia>
-          <ixx>1e-05</ixx>
+          <ixx>0.01299</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>1.8e-05</iyy>
+          <iyy>0.00731</iyy>
           <iyz>0</iyz>
-          <izz>1e-05</izz>
+          <izz>0.00731</izz>
         </inertia>
       </inertial>
-      <collision name='rr_wheel_link_collision'>
+      <collision name='rr_wheel_collision'>
         <pose>0 0 0 1.5708 0 0</pose>
         <geometry>
           <cylinder>
-            <radius>0.156</radius>
-            <length>0.108</length>
+            <radius>0.162</radius>
+            <length>0.120</length>
           </cylinder>
         </geometry>
         <surface>
-          <friction>
-            <ode>
-              <mu>1.0</mu>
-              <mu2>1.0</mu2>
-            </ode>
-          </friction>
+          <friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction>
           <contact><ode/></contact>
         </surface>
       </collision>
-      <visual name='rr_wheel_link_visual'>
-        <pose>0 0 0 0 0 0</pose>
+      <visual name='rr_wheel_visual'>
+        <pose>0 0 0 1.5708 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>6 6 6</scale>
-            <uri>file:///home/kenzy/crater_sim/autonomous-controls/src/crater_gazebo/crater_description/models/rover/meshes/DAE/wheel/wheel_link.dae</uri>
-          </mesh>
+          <cylinder>
+            <radius>0.162</radius>
+            <length>0.120</length>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -579,7 +517,7 @@
     <static>0</static>
 
     <!-- ================================================================
-         PLUGINS: terby Ignition Gazebo control
+         PLUGINS
     ================================================================ -->
     <plugin
         filename="ignition-gazebo-joint-state-publisher-system"

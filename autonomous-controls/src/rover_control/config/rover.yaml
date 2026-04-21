@@ -48,9 +48,9 @@ kinematics_node:
     wheel_cmd_topic:    "/wheel_commands"
 
     # Rover geometry
-    L: 0.924             # wheelbase    (front-to-back)  [m]
-    W: 0.372             # track width  (left-to-right)  [m]
-    R: 0.156            # wheel radius                  [m]
+    L: 0.614             # wheelbase    (front-to-back)  [m]
+    W: 1.135         # track width  (left-to-right)  [m]
+    R: 0.162             # wheel radius                  [m]
 
     # Minimum wheel contact speed to compute a new steering angle [m/s]
     # Below this the previous steering angle is held (prevents jitter at stop)
