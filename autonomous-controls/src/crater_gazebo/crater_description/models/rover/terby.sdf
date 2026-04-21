@@ -3,18 +3,18 @@
   <model name='terby'>
 
     <!-- ================================================================
-         REAL ROVER DIMENSIONS - X/Y swapped so:
-           X = forward/backward = wheelbase = 0.614 m
-           Y = left/right       = track width = 1.135 m
+         CORRECTED DIMENSIONS:
+           X = forward/backward = wheelbase   = 1.135 m
+           Y = left/right       = track width = 0.614 m
 
          Wheel positions in base_link frame:
-           FL: x=+0.307  y=+0.5675  z=-0.31
-           FR: x=+0.307  y=-0.5675  z=-0.31
-           RL: x=-0.307  y=+0.5675  z=-0.31
-           RR: x=-0.307  y=-0.5675  z=-0.31
+           FL: x=+0.5675  y=+0.307  z=-0.31
+           FR: x=+0.5675  y=-0.307  z=-0.31
+           RL: x=-0.5675  y=+0.307  z=-0.31
+           RR: x=-0.5675  y=-0.307  z=-0.31
 
-         Chassis: 0.614 x 1.135 x 0.10 m  (length x width x height)
-         Front bumper: red box at x=+0.35 (past front wheel line)
+         Chassis: 1.135 x 0.614 x 0.10 m  (length x width x height)
+         Front bumper: box at x=+0.5875 (past front wheel line)
     ================================================================ -->
 
     <!-- CHASSIS -->
@@ -34,7 +34,7 @@
       <collision name='base_link_collision'>
         <geometry>
           <box>
-            <size>0.614 1.135 0.10</size>
+            <size>1.135 0.614 0.10</size>
           </box>
         </geometry>
         <surface>
@@ -47,16 +47,16 @@
       <visual name='base_link_visual'>
         <geometry>
           <box>
-            <size>0.614 1.135 0.10</size>
+            <size>1.135 0.614 0.10</size>
           </box>
         </geometry>
       </visual>
       <!-- Front bumper: marks +X (forward) direction -->
       <visual name='front_bumper_visual'>
-        <pose>0.347 0 0.06 0 0 0</pose>
+        <pose>0.5875 0 0.06 0 0 0</pose>
         <geometry>
           <box>
-            <size>0.04 1.135 0.08</size>
+            <size>0.04 0.614 0.08</size>
           </box>
         </geometry>
       </visual>
@@ -66,7 +66,7 @@
          FRONT LEFT
     ================================================================ -->
     <joint name='steeringjoint_frontleft' type='revolute'>
-      <pose relative_to='base_link'>0.307 0.5675 0 0 0 0</pose>
+      <pose relative_to='base_link'>0.5675 0.307 0 0 0 0</pose>
       <parent>base_link</parent>
       <child>fl_steering_link</child>
       <axis>
@@ -179,7 +179,7 @@
          FRONT RIGHT
     ================================================================ -->
     <joint name='steeringjoint_frontright' type='revolute'>
-      <pose relative_to='base_link'>0.307 -0.5675 0 0 0 0</pose>
+      <pose relative_to='base_link'>0.5675 -0.307 0 0 0 0</pose>
       <parent>base_link</parent>
       <child>fr_steering_link</child>
       <axis>
@@ -292,7 +292,7 @@
          REAR LEFT
     ================================================================ -->
     <joint name='steeringjoint_backleft' type='revolute'>
-      <pose relative_to='base_link'>-0.307 0.5675 0 0 0 0</pose>
+      <pose relative_to='base_link'>-0.5675 0.307 0 0 0 0</pose>
       <parent>base_link</parent>
       <child>rl_steering_link</child>
       <axis>
@@ -405,7 +405,7 @@
          REAR RIGHT
     ================================================================ -->
     <joint name='steeringjoint_backright' type='revolute'>
-      <pose relative_to='base_link'>-0.307 -0.5675 0 0 0 0</pose>
+      <pose relative_to='base_link'>-0.5675 -0.307 0 0 0 0</pose>
       <parent>base_link</parent>
       <child>rr_steering_link</child>
       <axis>
