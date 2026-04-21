@@ -82,8 +82,8 @@ install(
 # will be copied to the 'share/ros_gz_example_gazebo/worlds'
 # subfolder of the installation directory.
 install(
-  DIRECTORY worlds/
-  DESTINATION share/${PROJECT_NAME}/worlds
+  DIRECTORY worlds models
+  DESTINATION share/${PROJECT_NAME}
 )
 
 

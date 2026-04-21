@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://sdformat.org/schemas/root.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <sdf version="1.7">
-  <model name="marsyard2022_terrain">
+  <model name="crater_marsyard_terrain">
     <pose>0 0 0 0 0 0</pose>
     <static>true</static>
 
@@ -10,7 +10,7 @@
       <collision name="terrain_collision">
         <geometry>
           <heightmap>
-            <uri>model://marsyard2022_terrain/dem/marsyard2022_terrain_hm.png</uri>
+            <uri>model://crater_marsyard_terrain/dem/crater_marsyard_terrain_hm.png</uri>
             <pos>0 0 0</pos>
             <size>50 50 4.820803273566</size>
           </heightmap>
@@ -21,12 +21,12 @@
         <geometry>
           <heightmap>
             <use_terrain_paging>false</use_terrain_paging>
-            <uri>model://marsyard2022_terrain/dem/marsyard2022_terrain_hm.png</uri>
+            <uri>model://crater_marsyard_terrain/dem/crater_marsyard_terrain_hm.png</uri>
             <pos>0 0 0</pos>
             <size>50 50 4.820803273566</size>
             <texture>
-              <diffuse>model://marsyard2022_terrain/dem/marsyard2022_terrain_texture.png</diffuse>
-              <normal>model://marsyard2022_terrain/dem/flat_normal.png</normal>
+              <diffuse>model://crater_marsyard_terrain/dem/crater_marsyard_terrain_texture.png</diffuse>
+              <normal>model://crater_marsyard_terrain/dem/flat_normal.png</normal>
               <size>50</size>
             </texture>
           </heightmap>

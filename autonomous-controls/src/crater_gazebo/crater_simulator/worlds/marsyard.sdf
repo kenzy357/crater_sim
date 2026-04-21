@@ -45,7 +45,7 @@
 
     <model name="marsyard">
       <include>
-        <uri>model://marsyard2022_terrain</uri>
+        <uri>model://crater_marsyard_terrain</uri>
       </include>
     </model>
 
