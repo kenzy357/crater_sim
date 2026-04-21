@@ -45,8 +45,23 @@
 
     <model name="marsyard">
       <include>
-        <uri>model://marsyard2022_terrain</uri>
+        <uri>model://crater_marsyard_terrain</uri>
       </include>
+    </model>
+
+    <model name="rover">
+      <self_collide>true</self_collide>
+      <pose>7.19 0.59 1.89 0 0 0</pose>
+      <include merge="true">
+        <uri>package://crater_description/models/rover</uri>
+      </include>
+      <plugin filename="ignition-gazebo-joint-state-publisher-system"
+              name="ignition::gazebo::systems::JointStatePublisher"/>
+      <plugin filename="ignition-gazebo-odometry-publisher-system"
+              name="ignition::gazebo::systems::OdometryPublisher">
+        <odom_frame>odom</odom_frame>
+        <robot_base_frame>base_link</robot_base_frame>
+      </plugin>
     </model>
 
   </world>
