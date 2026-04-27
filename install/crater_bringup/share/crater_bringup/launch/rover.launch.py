@@ -46,15 +46,16 @@ def generate_launch_description():
 
     # Setup to launch the simulator and Gazebo world
     gz_sim = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(pkg_ros_gz_sim, 'launch', 'gz_sim.launch.py')),
-        launch_arguments={'gz_args': [
-            PathJoinSubstitution([
-                pkg_project_gazebo,
-                'worlds',
-                'marsyard.sdf'
-            ])
-        ]}.items(),
+    PythonLaunchDescriptionSource(
+        os.path.join(pkg_ros_gz_sim, 'launch', 'gz_sim.launch.py')),
+    launch_arguments={'gz_args': [
+        '-r ',
+        PathJoinSubstitution([
+            pkg_project_gazebo,
+            'worlds',
+            LaunchConfiguration('world')
+        ])
+    ]}.items(),
     )
 
     spawn_robot = Node(
@@ -204,10 +205,10 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        gz_sim,
-        spawn_robot,
         DeclareLaunchArgument('use_sim_time', default_value='true',
                               description='Use simulation clock (false for real hardware).'),
+        DeclareLaunchArgument('world', default_value='marsyard.sdf',
+                              description='World SDF file to load.'),
         DeclareLaunchArgument('rviz', default_value='false',
                               description='Open RViz.'),
         DeclareLaunchArgument('autonomy', default_value='true',
@@ -241,6 +242,8 @@ def generate_launch_description():
             default_value='',
             description='Path to metadata .npy file [min_x, min_y, resolution].'
         ),
+        gz_sim,
+        spawn_robot,
         bridge,
         robot_state_publisher,
         ekf_node,

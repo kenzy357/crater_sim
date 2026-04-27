@@ -1,0 +1,36 @@
+## build
+cd ~/crater_sim/autonomous-controls
+colcon build
+
+# may be needed 
+export GZ_SIM_RESOURCE_PATH=~/crater_sim_ws/src/crater_gazebo/crater_simulator/models
+
+
+# launch simulation
+source install/setup.bash
+ros2 launch crater_bringup rover.launch.py
+
+#launch in flat world
+ros2 launch crater_bringup rover.launch.py world:=flat.sdf
+
+# launch gamepad control
+ros2 launch rover_control rover.launch.py
+
+
+#rotate -90
+ros2 topic pub --times 1 /rover/front_left_steering_pos std_msgs/msg/Float64 "{data: -1.5708}"
+ros2 topic pub --times 1 /rover/front_right_steering_pos std_msgs/msg/Float64 "{data: -1.5708}"
+ros2 topic pub --times 1 /rover/rear_left_steering_pos std_msgs/msg/Float64 "{data: -1.5708}"
+ros2 topic pub --times 1 /rover/rear_right_steering_pos std_msgs/msg/Float64 "{data: -1.5708}"
+
+# rotate 90
+ros2 topic pub --times 1 /rover/front_left_steering_pos std_msgs/msg/Float64 "{data: 1.5708}"
+ros2 topic pub --times 1 /rover/front_right_steering_pos std_msgs/msg/Float64 "{data: 1.5708}"
+ros2 topic pub --times 1 /rover/rear_left_steering_pos std_msgs/msg/Float64 "{data: 1.5708}"
+ros2 topic pub --times 1 /rover/rear_right_steering_pos std_msgs/msg/Float64 "{data: 1.5708}"
+
+# go forward
+ros2 topic pub /rover/front_left_wheel_vel_cmd std_msgs/msg/Float64 "{data: 5.0}" &
+ros2 topic pub /rover/front_right_wheel_vel_cmd std_msgs/msg/Float64 "{data: 5.0}" &
+ros2 topic pub /rover/rear_left_wheel_vel_cmd std_msgs/msg/Float64 "{data: 5.0}" &
+ros2 topic pub /rover/rear_right_wheel_vel_cmd std_msgs/msg/Float64 "{data: 5.0}" & 
